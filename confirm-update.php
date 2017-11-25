@@ -72,28 +72,25 @@
 ?>
 
 <!doctype html>
-<html>
-<head>
-	<title>Success</title>
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-	<link rel="stylesheet" href="css/styles.css">
-</head>
-<div class="wrapping-paper">
-	<h1>Database Update - Response Table</h1>
+<html lang="en">
+	<head>
+		<title>Success</title>
+	</head>
+	<body>
+		<h1>Database Update - Response Table</h1>
 
-	<?php
-		if ($result) {
-			echo "Success! - the query didn't error-out";
+		<?php
+			if ($result) {
+				echo "Success! - the query didn't error-out";
 
-		} else {
-			die("Database query failed.");
-		}
-	?>
-		<br><br>
-		<a href=".">Back to the Index</a>
-</div>
-
-</body>
+			} else {
+				die("Database query failed.");
+			}
+		?>
+		<form method="post" action="survey.html">
+			<input type="submit" value="Back to Survey">
+		</form>
+	</body>
 </html>
 
 

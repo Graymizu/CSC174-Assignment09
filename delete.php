@@ -29,27 +29,23 @@
 
 <!doctype html>
 <html>
-<head>
-	<title>Database Delete - Subjects table</title>
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-	<link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-<div class="wrapping-paper">
-	<h1>Database Delete - Subjects table</h1>
+	<head>
+		<title>Database Delete - Subjects table</title>
+	</head>
+	<body>
+		<h1>Database Delete - Subjects table</h1>
 
-	<?php
-		if ($result) {
-			echo "Success! - the query didn't error-out";
+		<?php
+			if ($result) {
+				echo "Success! - the query didn't error-out";
 
-		} else {
-			die("Database query failed.");
-		}
-	?>
-		<br><br>
-		<a href=".">Back to the Index</a>
-</div>
-</body>
+			} else {
+				die("Database query failed.");
+			}
+		?>
+			<br><br>
+			<a href=".">Back to the Index</a>
+	</body>
 </html>
 
 

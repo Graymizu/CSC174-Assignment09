@@ -18,16 +18,13 @@
 
 <!DOCTYPE html>
 <html>
-<head>
-	<title>View Responses</title>
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-	<link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-	<div class="wrapping-paper">
+	<head>
+		<title>View Responses</title>
+	</head>
+	<body>
 		<h1>View Responses</h1>
 
-		<table class="result-table">
+		<table border>
 		
 		<!-- Table headers -->
 		<tr>
@@ -38,9 +35,14 @@
 			<th>Why?</th>
 			<th>Maine Coon</th>
 			<th>Why?</th>
-			<th>Kitten</th>
+			<th>American Shorthair</th>
 			<th>Why?</th>
-			<!-- <th>Delete?</th> -->
+			<th>Ragamuffin</th>
+			<th>Why?</th>
+			<th>Ragdoll</th>
+			<th>Why?</th>
+			<th>Bengal</th>
+			<th>Why?</th>
 		</tr>
 
 	<?php
@@ -53,27 +55,18 @@
 				<td><?php echo $responses["id"]; ?></td>
 				<td><?php echo $responses["name"]; ?></td>
 				<td><?php echo $responses["email"]; ?></td>
-				<td><?php echo $responses["fam1"].", ".$responses["do1a"]." ".$responses["do1b"]." ".$responses["do1c"]." ".$responses["do1d"]; ?></td>
+				<td><?php echo $responses["fam1"].", ".$responses["do1a"]." ".$responses["do1b"]." ".$responses["do1c"]." ".$responses["do1d"]." ".$responses["do1e"]." ".$responses["do1f"]; ?></td>
 				<td><?php echo $responses["why1"]; ?></td>
-				<td><?php echo $responses["fam2"].", ".$responses["do2a"]." ".$responses["do2b"]." ".$responses["do2c"]." ".$responses["do2d"]; ?></td>
+				<td><?php echo $responses["fam2"].", ".$responses["do2a"]." ".$responses["do2b"]." ".$responses["do2c"]." ".$responses["do2d"]." ".$responses["do2e"]." ".$responses["do2f"]; ?></td>
 				<td><?php echo $responses["why2"]; ?></td>
-				<td><?php echo $responses["fam3"].", ".$responses["do3a"]." ".$responses["do3b"]." ".$responses["do3c"]." ".$responses["do3d"]; ?></td>
+				<td><?php echo $responses["fam3"].", ".$responses["do3a"]." ".$responses["do3b"]." ".$responses["do3c"]." ".$responses["do3d"]." ".$responses["do3e"]." ".$responses["do3f"]; ?></td>
 				<td><?php echo $responses["why3"]; ?></td>
-				<!-- <td><button class="delete" onclick="delete()">Delete</button></td> -->
 			</tr>
 
 	<?php } ?>
 
 		</table>
-
-		<br>
-		<a href="update.html">Update a Response</a>
-		<br>
-		<a href="delete.html">Delete a Response</a>
-		<br>
-		<a href="survey.html">Return to Survey</a>
-	</div>
-</body>
+	</body>
 </html>
 
 <?php

@@ -1,28 +1,23 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Delete</title>
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-	<link rel="stylesheet" href="css/styles.css">
-</head>
+	<head>
+		<title>Delete</title>
+	</head>
 
-<body>
-	<div class="wrapping-paper">
-		<div class="typewritter">
-			<h1>Delete a Response</h1>
+	<body>
+		<h1>Delete a Response</h1>
 
-			<form method="post" class="survey" id="form" action="delete.php">
-				<span>Please enter the ID of the response you would like to delete.</span>
-				<br>
-				<input type="text" name="id" id="id">
-				<input type="submit" id="delete" value="Delete!">
-			</form>
+		<form method="post" id="form" action="delete.php">
+			<span>Please enter the ID of the response you would like to delete.</span>
+			<br>
+			<input type="text" name="id" id="id">
+			<input type="submit" id="delete" value="Delete!">
+		</form>
 
 		<br>
 		<a href="update.html">Update a Response</a>
 		<br>
 		<a href="survey.html">Return to Survey</a>
-		</div>
-	</div>
-</body>
+
+	</body>
 </html>
