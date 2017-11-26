@@ -150,7 +150,7 @@
 ?>
 	
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<title>Confirmation Page</title>
 	</head>

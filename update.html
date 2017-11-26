@@ -2,18 +2,18 @@
 <html lang="en">
 	<head>
 		<title>Delete</title>
-		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-		<link rel="stylesheet" href="css/styles.css">
 	</head>
 
 	<body>
+		
+		<?php include "admin-nav.inc" ?>
 
 		<h1>Update a Response</h1>
 
 		<form method="post" id="form" action="update.php">
 			<span>Please enter the ID of the response you would like to update.</span>
 			<br>
-			<input type="text" name="id" id="id">
+			<input type="number" name="id" id="id">
 			<input type="submit" id="update" value="Find Response">
 		</form>
 

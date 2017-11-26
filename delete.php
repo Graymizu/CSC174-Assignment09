@@ -28,11 +28,14 @@
 ?>
 
 <!doctype html>
-<html>
+<html lang="en">
 	<head>
 		<title>Database Delete - Subjects table</title>
 	</head>
 	<body>
+		
+		<?php include "admin-nav.inc" ?>
+
 		<h1>Database Delete - Subjects table</h1>
 
 		<?php
@@ -43,14 +46,9 @@
 				die("Database query failed.");
 			}
 		?>
-			<br><br>
-			<a href=".">Back to the Index</a>
+
 	</body>
 </html>
-
-
-
-
 
 <?php
 	// 5. Close database connection

@@ -25,8 +25,9 @@
 		<title>View Responses</title>
 	</head>
 	<body>
-		<h1>Updating Response ID <?php echo $id?></h1>
+		<?php include "admin-nav.inc" ?>
 
+		<h1>Updating Response ID <?php echo $id?></h1>
 
 		<?php
 			// 3. Use returned data (if any)

@@ -77,6 +77,9 @@
 		<title>Success</title>
 	</head>
 	<body>
+
+		<?php include "admin-nav.inc" ?>
+
 		<h1>Database Update - Response Table</h1>
 
 		<?php

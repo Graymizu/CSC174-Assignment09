@@ -17,11 +17,13 @@
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<title>View Responses</title>
 	</head>
 	<body>
+		<?php include "admin-nav.inc" ?>	
+
 		<h1>View Responses</h1>
 
 		<table border>
