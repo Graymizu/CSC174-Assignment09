@@ -1,4 +1,15 @@
 <?php
+	// Initialize the session
+	session_start();
+	 
+	// If session variable is not set it will redirect to login page
+	if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
+	  header("location: login.php");
+	  exit;
+	}
+?>
+
+<?php
 	// 1. Create a database connection
 	$dbhost = "66.147.242.186";
 	$dbuser = "urcscon3_bronx";
@@ -18,13 +29,17 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 	<head>
 		<title>View Responses</title>
 	</head>
 	<body>
 		<?php include "admin-nav.inc" ?>	
 
+		
+		<h1>Hi, <?php echo $_SESSION['username']; ?>. Welcome to our site.</h1>
 		<h1>View Responses</h1>
+
 
 		<table border>
 		
