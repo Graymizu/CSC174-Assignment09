@@ -25,7 +25,11 @@ FC/BC - Delete.html and Update.html should have a less detealed view of the data
 FC/BC - The Delete and Update functions should let the user know if there wasn't nothing to deleted [Sorry, accout #_ does not exist :( ]
 FC/BC - When updateing an account, the survey should be populated with the accounts original answers
 
-Everyone - add login page and functions
+		Login/Logout
+BC    - Create the "user" database based off the login code that was already uploaded
+DS    - Could you use the "cat-log.jpg" on the login and logout page
+	(either as a background image or something similar to what the Facebook login page looks like)
+FC    - Go through the php login code to make sure everything works smoothly
 
 
 
