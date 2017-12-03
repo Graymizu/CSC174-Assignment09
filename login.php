@@ -68,7 +68,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             }
                         }else{
                              // Display an error message if password is not valid
-                                $admincode_err = 'The password you entered was not valid.';
+                                $admincode_err = 'The admin code you entered was not valid.';
                         }
                     }
                 } else{
