@@ -22,7 +22,7 @@
 
 	// 2. Perform database query
 	$query  = "SELECT * ";
-	$query .= "FROM responses ";
+	$query .= "FROM response09 ";
 	$query .= "WHERE id={$id}";
 
 
@@ -52,11 +52,11 @@
 				<h2>Tell Us About Yourself</h2>
 				<section>
 					<span>ID: </span>
-					<input readonly type="text" name="id" id="id" value=<?php echo $responses["id"]?>>
+					<input readonly type="text" name="id" id="id" value=<?php echo $response09["id"]?>>
 					<span>Your Name:</span>
-					<input type="text" name="name" id="name" value="<?php echo $responses["name"]?>">
+					<input type="text" name="name" id="name" value="<?php echo $response09["name"]?>">
 					<span>Your Email Address:</span>
-					<input type="email" name="email" id="email" value="<?php echo $responses["email"]?>">
+					<input type="email" name="email" id="email" value="<?php echo $response09["email"]?>">
 				</section>
 			
 				<section> <!--===== User Information =====-->
