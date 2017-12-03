@@ -6,7 +6,6 @@ Planning to:
 Thought about:
   edit/delete 
   what if user wants to just takeout one part (considered editing as replacing a part; as delete would wipe entire file) 
-  took out radio buttons for some of the protective script since its unneeded 
   
   
   Anthony(IA) 
@@ -23,5 +22,4 @@ Thought about:
     database-rename questions 1a, 1b, 1c...etc to match database questions, make it more admin friendly to edit. 
     change first name and last name 
     email- need to make sure you have to have a @ 
-    For the checkbox, if there isn't a answer/check for it, have a N/A
     

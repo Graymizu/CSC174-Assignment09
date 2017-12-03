@@ -26,9 +26,8 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 
 	
 
-
 	// 2. Perform database query
-	$query  = "DELETE FROM responses ";
+	$query  = "DELETE FROM response09 ";
 	$query .= "WHERE id = {$id} ";
 	$query .= "LIMIT 1";
 

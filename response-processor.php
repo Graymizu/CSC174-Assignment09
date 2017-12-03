@@ -13,7 +13,8 @@
 	*/	
 	
 	//Get values and escape strings
-	$name = trim(stripslashes($_POST['name']));
+	$fname = trim(stripslashes($_POST['fname']));
+	$lname = trim(stripslashes($_POST['lname']));
 	$email = trim(stripslashes($_POST['email']));
 
 	//error fix for radio buttons and checkboxes
@@ -140,10 +141,10 @@
 	
 	// SQL Insert query into the database: responses
 
-	$query = "INSERT INTO responses (";
-	$query .=" name, email, fam1, do1a, do1b, do1c, do1d, why1, fam2, do2a, do2b, do2c, do2d, why2, fam3, do3a, do3b, do3c, do3d, why3";
+	$query = "INSERT INTO response09 (";
+	$query .=" fname, lname, email, siamese1, siamese2, siamese3, maine1, maine2, maine3, american1, american2, american3";
 	$query .=") VALUES (";
-	$query .="'{$name}', '{$email}', '{$fam1}', '{$do1a}', '{$do1b}', '{$do1c}', '{$do1d}', '{$why1}', '{$fam2}', '{$do2a}', '{$do2b}', '{$do2c}', '{$do2d}', '{$why2}', '{$fam3}', '{$do3a}', '{$do3b}', '{$do3c}', '{$do3d}', '{$why3}'";
+	$query .="'{$fname}', '{$lname}', '{$email}', '{$siamese1}', '{$siamese2}', '{$siamese3}', '{$maine1}', '{$maine2}', '{$maine3}', '{$american1}', '{$american2}', '{$american3}'";
 	$query .=")";
 	
 	$result = mysqli_query($connection, $query);
