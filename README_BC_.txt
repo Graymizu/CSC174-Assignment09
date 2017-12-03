@@ -22,4 +22,5 @@ Thought about:
     database-rename questions 1a, 1b, 1c...etc to match database questions, make it more admin friendly to edit. 
     change first name and last name 
     email- need to make sure you have to have a @ 
+    For the checkbox, if there isn't a answer/check for it, have a N/A
     
