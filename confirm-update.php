@@ -22,60 +22,133 @@
 	
 	$id = (int) $_POST ['id'];
 	
-	$name = trim(stripslashes($_POST['name']));
+	$fname = trim(stripslashes($_POST['fname']));
+	$lname = trim(stripslashes($_POST['lname']));
 	$email = trim(stripslashes($_POST['email']));
-	$fam1 = trim(stripslashes($_POST['familiar1']));
-	$do1a = $_POST['do1a'];
-	$do1b = $_POST['do1b'];
-	$do1c = $_POST['do1c'];
-	$do1d = $_POST['do1d'];
-	$why1 = Trim(stripslashes($_POST['why1']));
+	$siamese1 = trim(stripslashes($_POST['siamese1']));
+	$siamese2a = $_POST['siamese2a'];
+	$siamese2b = $_POST['siamese2b'];
+	$siamese2c = $_POST['siamese2c'];
+	$siamese2d = $_POST['siamese2d'];
+	$siamese2e = $_POST['siamese2e'];
+	$siamese2f = $_POST['siamese2f'];
+	$siamese3 = Trim(stripslashes($_POST['siamese3']));
 	
-	$fam2 = trim(stripslashes($_POST['familiar2']));
-	$do2a = $_POST['do2a'];
-	$do2b = $_POST['do2b'];
-	$do2c = $_POST['do2c'];
-	$do2d = $_POST['do2d'];
-	$why2 = Trim(stripslashes($_POST['why2']));
+	$maine1 = trim(stripslashes($_POST['maine1']));
+	$maine2a = $_POST['maine2a'];
+	$maine2b = $_POST['maine2b'];
+	$maine2c = $_POST['maine2c'];
+	$maine2d = $_POST['maine2d'];
+	$maine2e = $_POST['maine2e'];
+	$maine2f = $_POST['maine2f'];
+	$maine3 = Trim(stripslashes($_POST['maine3']));
 	
-	$fam3 = trim(stripslashes($_POST['familiar3']));
-	$do3a = $_POST['do3a'];
-	$do3b = $_POST['do3b'];
-	$do3c = $_POST['do3c'];
-	$do3d = $_POST['do3d'];
-	$why3 = Trim(stripslashes($_POST['why3']));
+	$american1 = trim(stripslashes($_POST['american1']));
+	$american2a = $_POST['american2a'];
+	$american2b = $_POST['american2b'];
+	$american2c = $_POST['american2c'];
+	$american2d = $_POST['american2d'];
+	$american2e = $_POST['american2e'];
+	$american2f = $_POST['american2f'];
+	$american3 = Trim(stripslashes($_POST['american3']));
+
+	$ragamuffin1 = trim(stripslashes($_POST['ragamuffin1']));
+	$ragamuffin2a = $_POST['ragamuffin2a'];
+	$ragamuffin2b = $_POST['ragamuffin2b'];
+	$ragamuffin2c = $_POST['ragamuffin2c'];
+	$ragamuffin2d = $_POST['ragamuffin2d'];
+	$ragamuffin2e = $_POST['ragamuffin2e'];
+	$ragamuffin2f = $_POST['ragamuffin2f'];
+	$ragamuffin3 = Trim(stripslashes($_POST['ragamuffin3']));
+
+	$ragdoll1 = trim(stripslashes($_POST['ragdoll1']));
+	$ragdoll2a = $_POST['ragdoll2a'];
+	$ragdoll2b = $_POST['ragdoll2b'];
+	$ragdoll2c = $_POST['ragdoll2c'];
+	$ragdoll2d = $_POST['ragdoll2d'];
+	$ragdoll2e = $_POST['ragdoll2e'];
+	$ragdoll2f = $_POST['ragdoll2f'];
+	$ragdoll3 = Trim(stripslashes($_POST['ragdoll3']));
+
+	$bengal1 = trim(stripslashes($_POST['bengal1']));
+	$bengal2a = $_POST['bengal2a'];
+	$bengal2b = $_POST['bengal2b'];
+	$bengal2c = $_POST['bengal2c'];
+	$bengal2d = $_POST['bengal2d'];
+	$bengal2e = $_POST['bengal2e'];
+	$bengal2f = $_POST['bengal2f'];
+	$bengal3 = Trim(stripslashes($_POST['bengal3']));
 	
-	$name = mysqli_real_escape_string($connection, $name);
+	$fname = mysqli_real_escape_string($connection, $fname);
+	$lname = mysqli_real_escape_string($connection, $lname);
 	$email = mysqli_real_escape_string($connection, $email);
-	$fam1 = mysqli_real_escape_string($connection, $fam1);
-	$fam2 = mysqli_real_escape_string($connection, $fam2);
-	$fam3 = mysqli_real_escape_string($connection, $fam3);
-	$why1 = mysqli_real_escape_string($connection, $why1);
-	$why2 = mysqli_real_escape_string($connection, $why2);
-	$why3 = mysqli_real_escape_string($connection, $why3);
+	$siamese3 = mysqli_real_escape_string($connection, $siamese3);
+	$maine3 = mysqli_real_escape_string($connection, $maine3);
+	$american3 = mysqli_real_escape_string($connection, $american3);
+	$ragamuffin3 = mysqli_real_escape_string($connection, $ragamuffin3);
+	$ragdoll3 = mysqli_real_escape_string($connection, $ragdoll3);
+	$bengal3 = mysqli_real_escape_string($connection, $bengal3);
 	
 	// 2. Perform database query
 	$query  = "UPDATE responses SET ";
-	$query .= "name = '{$name}', ";
+	$query .= "fname = '{$fname}', ";
+	$query .= "lname = '{$lname}', ";
 	$query .= "email = '{$email}', ";
-	$query .= "fam1 = '{$fam1}', ";
-	$query .= "do1a = '{$do1a}', ";
-	$query .= "do1b = '{$do1b}', ";
-	$query .= "do1c = '{$do1c}', ";
-	$query .= "do1d = '{$do1d}', ";
-	$query .= "why1 = '{$why1}', ";
-	$query .= "fam2 = '{$fam2}', ";
-	$query .= "do2a = '{$do2a}', ";
-	$query .= "do2b = '{$do2b}', ";
-	$query .= "do2c = '{$do2c}', ";
-	$query .= "do2d = '{$do2d}', ";
-	$query .= "why2 = '{$why2}', ";
-	$query .= "fam3 = '{$fam3}', ";
-	$query .= "do3a = '{$do3a}', ";
-	$query .= "do3b = '{$do3b}', ";
-	$query .= "do3c = '{$do3c}', ";
-	$query .= "do3d = '{$do3d}', ";
-	$query .= "why3 = '{$why3}'";
+
+	$query .= "siamese1 = '{$siamese1}', ";
+	$query .= "siamese2a = '{$siamese2a}', ";
+	$query .= "siamese2b = '{$siamese2b}', ";
+	$query .= "siamese2c = '{$siamese2c}', ";
+	$query .= "siamese2d = '{$siamese2d}', ";
+	$query .= "siamese2e = '{$siamese2e}', ";
+	$query .= "siamese2f = '{$siamese2f}', ";
+	$query .= "siamese3 = '{$siamese3}', ";
+
+	$query .= "maine1 = '{$maine1}', ";
+	$query .= "maine2a = '{$maine2a}', ";
+	$query .= "maine2b = '{$maine2b}', ";
+	$query .= "maine2c = '{$maine2c}', ";
+	$query .= "maine2d = '{$maine2d}', ";
+	$query .= "maine2e = '{$maine2e}', ";
+	$query .= "maine2f = '{$maine2f}', ";
+	$query .= "maine3 = '{$maine3}', ";
+
+	$query .= "american1 = '{$american1}', ";
+	$query .= "american2a = '{$american2a}', ";
+	$query .= "american2b = '{$american2b}', ";
+	$query .= "american2c = '{$american2c}', ";
+	$query .= "american2d = '{$american2d}', ";
+	$query .= "american2e = '{$american2e}', ";
+	$query .= "american2f = '{$american2f}', ";
+	$query .= "american3 = '{$american3}'";
+
+	$query .= "ragamuffin1 = '{$ragamuffin1}', ";
+	$query .= "ragamuffin2a = '{$ragamuffin2a}', ";
+	$query .= "ragamuffin2b = '{$ragamuffin2b}', ";
+	$query .= "ragamuffin2c = '{$ragamuffin2c}', ";
+	$query .= "ragamuffin2d = '{$ragamuffin2d}', ";
+	$query .= "ragamuffin2e = '{$ragamuffin2e}', ";
+	$query .= "ragamuffin2f = '{$ragamuffin2f}', ";
+	$query .= "ragamuffin3 = '{$ragamuffin3}', ";
+
+	$query .= "ragdoll1 = '{$ragdoll1}', ";
+	$query .= "ragdoll2a = '{$ragdoll2a}', ";
+	$query .= "ragdoll2b = '{$ragdoll2b}', ";
+	$query .= "ragdoll2c = '{$ragdoll2c}', ";
+	$query .= "ragdoll2d = '{$ragdoll2d}', ";
+	$query .= "ragdoll2e = '{$ragdoll2e}', ";
+	$query .= "ragdoll2f = '{$ragdoll2f}', ";
+	$query .= "ragdoll3 = '{$ragdoll3}', ";
+
+	$query .= "bengal1 = '{$bengal1}', ";
+	$query .= "bengal2a = '{$bengal2a}', ";
+	$query .= "bengal2b = '{$bengal2b}', ";
+	$query .= "bengal2c = '{$bengal2c}', ";
+	$query .= "bengal2d = '{$bengal2d}', ";
+	$query .= "bengal2e = '{$bengal2e}', ";
+	$query .= "bengal2f = '{$bengal2f}', ";
+	$query .= "bengal3 = '{$bengal3}', ";
+
 	$query .= "WHERE id = {$id} ";
 
 	$result = mysqli_query($connection, $query);
