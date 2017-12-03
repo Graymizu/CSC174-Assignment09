@@ -6,6 +6,7 @@ Planning to:
 Thought about:
   edit/delete 
   what if user wants to just takeout one part (considered editing as replacing a part; as delete would wipe entire file) 
+  took out radio buttons for some of the protective script since its unneeded 
   
   
   Anthony(IA) 
