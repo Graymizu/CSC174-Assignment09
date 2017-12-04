@@ -23,7 +23,6 @@ DS    - Give these pages a more professional looking font
 FC/BC - Delete.html and Update.html should have a less detealed view of the database so the user doesn't have to remember what account they wanted to select
 	(Should show at least name and email. Could aslo show familiarity with each cat bread)	
 FC/BC - The Delete and Update functions should let the user know if there wasn't nothing to deleted [Sorry, accout #_ does not exist :( ]
-	estella- make sure to add code where if the id for update/delete doesn't exist, it will let you know 
 FC/BC - When updateing an account, the survey should be populated with the accounts original answers
 
 		Login/Logout
