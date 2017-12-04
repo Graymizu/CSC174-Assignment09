@@ -1,0 +1,58 @@
+/*	**************************Demo styles (for demo purposes only)***************************** */
+p { 
+	margin-top: 0; 
+	font-family: 'Roboto', serif;
+	font-size: 17px;
+}
+
+h1{
+	text-align: left;
+	font-family: 'Abril Fatface', cursive;
+	font-size: 75px;
+	font-weight:normal;
+	margin-bottom: 10px;
+	margin-top: 5px;
+	word-spacing: 4px;
+}
+
+h2{
+	font-family: 'Abril Fatface', serif;
+	font-size: 30px;
+	word-spacing: 2px;
+	font-weight: normal;
+	margin: 10px;
+}
+
+.container h2{
+	font-family: 'Abril Fatface', serif;
+	font-size: 50px;
+	word-spacing: 2px;
+	font-weight: normal;
+}
+
+
+li{
+	font-family: 'Roboto', serif;
+}
+
+.right {
+	float: right;
+	margin-left: 15px;
+}
+
+.frame {
+	border: 1px solid #666;
+	padding: 5px;
+}
+
+.container {
+	margin: 0 auto;
+	width: 95%;
+	max-width: 960px; 
+}
+
+#cites {
+	margin: 0 auto;
+	width: 95%;
+	max-width: 960px; 
+}

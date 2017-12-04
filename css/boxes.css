@@ -1,0 +1,96 @@
+
+html, body {
+    margin: 0; /* typical - gets rid of the default margin on the BODY */
+    height: 100%; /* required - makes sections act like pages */
+    background-color: #f5b041; /*EEE8AA;*/
+}
+
+header{
+	margin bottom: 15px;
+}
+
+/*	*************************Box management**************************** */
+.box1{
+    background-image: url('../images/cat-background.jpg');
+    background-size: 100% 100%;
+    min-height: 100%; /* required - makes the sections act like pages */
+	padding-left: 45px;
+	padding-right: 35px;
+	margin-top: 0px;
+	margin bottom: 60px;
+	margin color: red;
+	padding-bottom: 90px; /* typical - keep content away from the next section */
+   	padding-top: 105px; /* how tall is the persistent nav bar at the top? */
+}
+
+.box1 h1{
+	text-align: center;
+	margin-top: 1px;
+}
+
+.survey{
+	padding-top: 15px;
+	padding-left: 45px;
+	padding-right: 45px;
+	padding-bottom: 45px;
+}
+
+.box2{
+	background-color: #f2cb84;
+
+}
+
+.box3{
+	background-color: #EEE8AA;
+} 
+
+.box4{
+	background-color: #f2cb84;
+
+}
+
+.box5{
+	background-color: #EEE8AA;
+}
+
+.box6{
+	background-color: #efbe66;
+
+}
+
+.box7{
+		background-color: #EEE8AA;
+
+}
+
+
+
+
+.opaque{
+	background-color: rgba(238,233,233, 0.4);
+	padding: 18px 15px 15px 15px;
+}
+
+/********************Top Bar********************/
+.topbar {
+	position: fixed; /* required - magic */
+	top: 0; /* required - makes sure the menu sits where it's supposed to sit */
+	z-index: 1000; /* required - makes sure the menu doesn't get covered by anything else */
+	width: 100%; /* required - makes the menu go all the way across the viewport */
+	background-color:black;
+	color: white;
+	text-align: center;
+	padding-top: 8px;
+	height: 45px;
+	margin-left: 0px;
+}
+
+.topbar h2{
+	display: inline;
+	padding-right: 20px;
+}
+
+.topbar div{
+	display: inline;
+	margin-right:15px;
+}
