@@ -59,10 +59,18 @@ header{
 }
 
 .box7{
-		background-color: #EEE8AA;
-
+	background-color: #EEE8AA;
 }
 
+.box8{
+	padding-top: 15px;
+	padding-left:15px;
+	background-color: #efbe66;
+}
+
+.box8 p{
+		padding-left: 35px;
+}
 
 
 
@@ -94,3 +102,17 @@ header{
 	display: inline;
 	margin-right:15px;
 }
+
+.button{
+	padding-top: 25px;
+	text-align: center;
+}
+
+input[type=submit] {
+    width: 15em;  
+    height: 3em;
+    font-size: 20px;
+}
+
+input[type=submit] :hover{
+]background-color:green"}

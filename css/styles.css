@@ -23,6 +23,13 @@ h2{
 	margin: 10px;
 }
 
+h3{
+	font-family: 'Abril Fatface', serif;
+	font-size: 20px;
+	word-spacing: 2px;
+	font-weight: normal;
+}
+
 .container h2{
 	font-family: 'Abril Fatface', serif;
 	font-size: 50px;
