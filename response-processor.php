@@ -221,42 +221,42 @@
 
 
 	if(empty($_POST['bengal1'])){
-		$ragdoll1 = $blank;
+		$bengal1 = $blank;
 	}else{
-		$ragdoll1 = Trim(stripslashes($_POST['ragdoll1']));
+		$bengal1 = Trim(stripslashes($_POST['bengal1']));
 	}
 	if(empty($_POST['bengal2a'])){
-		$ragdoll2a = $blank;
+		$bengal2a = $blank;
 	}else{
-		$ragdoll2a = $_POST['bengal2a'];
+		$bengal2a = $_POST['bengal2a'];
 	}
 	if(empty($_POST['rbengal2b'])){
-		$ragdoll2b = $blank;
+		$bengal2b = $blank;
 	}else{
-		$ragdoll2b = $_POST['bengal2b'];
+		$bengal2b = $_POST['bengal2b'];
 	}
 	if(empty($_POST['bengal2c'])){
-		$ragdoll2c = $blank;
+		$bengal2c = $blank;
 	}else{
-		$ragdoll2c = $_POST['bengal2c'];
+		$bengal2c = $_POST['bengal2c'];
 	}
 	if(empty($_POST['bengal2d'])){
-		$ragdoll2d = $blank;
+		$bengal2d = $blank;
 	}else{
-		$ragdoll2d = $_POST['bengal2d'];
+		$bengal2d = $_POST['bengal2d'];
 	}
 	if(empty($_POST['bengal2e'])){
-		$ragdoll2e = $blank;
+		$bengal2e = $blank;
 	}else{
-		$ragdoll2e = $_POST['bengal2e'];
+		$bengal2e = $_POST['bengal2e'];
 	}
 	if(empty($_POST['bengal2f'])){
-		$ragdoll2f = $blank;
+		$bengal2f = $blank;
 	}else{
-		$ragdoll2f = $_POST['bengal2f'];
+		$bengal2f = $_POST['bengal2f'];
 	}
 	if (isset($_POST['bengal3'])) 
-	$ragdoll3 = Trim(stripslashes($_POST['bengal3']));
+	$bengal3 = Trim(stripslashes($_POST['bengal3']));
 	
 	if (isset($_POST['fname'])) { echo "fname";
 	$fname = mysqli_real_escape_string($connection, $fname);}
