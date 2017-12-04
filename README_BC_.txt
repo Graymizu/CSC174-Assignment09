@@ -1,7 +1,6 @@
 
 Planning to:
-  make edit and delete on the same page for easier user access 
-  add questions on to the database (make the questions reflect onto the database) 
+done. 
   
 Thought about/Did:
   edit/delete -- what if user wants to just takeout one part (considered editing as replacing a part; as delete would wipe entire file) 
@@ -10,6 +9,7 @@ Thought about/Did:
   added new info onto database 
   database-rename questions 1a, 1b, 1c...etc to match database questions, make it more admin friendly to edit. 
   ^^^ edited/changed all the names/id
+    add questions on to the database (make the questions reflect onto the database) 
   
   Things to do: 
     email- need to make sure you have to have a @ 
@@ -22,6 +22,8 @@ Thought about/Did:
 	(Should show at least name and email. Could aslo show familiarity with each cat bread)
   The Delete and Update functions should let the user know if there wasn't anything to deleted [Sorry, accout #_ does not exist :( ]
   When updateing an account, the survey should be populated with the accounts original answers
-  Create the "user" database based off the login code that was already uploaded
+  Create the "user" database based off the login code that was already uploaded. 
+  
+  
   
     
