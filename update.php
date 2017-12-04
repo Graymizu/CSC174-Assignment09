@@ -82,9 +82,12 @@
 					<div>
 						<span>Are you familiar with this breed?</span><br>
 
-						<input type="radio" name="american1" value="Yes">Yes<br>
-						<input type="radio" name="american1" value="No">No<br>
-						<input type="radio" name="american1" value="Unsure" required>Unsure
+						<input type="radio" name="american1" checked= "checked" value=
+						<?php echo $responses["american1"] ?>>Yes<br>
+						<input type="radio" name="american1" checked="checked"> value=
+						<?php echo ($type == 'N') ? 'checked' : ''; ?>>No <br>
+						<input type="radio" name="american1" checked="checked" value=
+						<?php echo ($type == 'U') ? 'checked' : ''; ?> required> Unsure
 					</div>
 
 					<div>
