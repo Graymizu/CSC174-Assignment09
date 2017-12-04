@@ -52,24 +52,19 @@
 				<h2>Tell Us About Yourself</h2>
 				<section>
 					<span>ID: </span>
-					<input readonly type="text" name="id" id="id" value=<?php echo $response09["id"]?>>
-					<span>Your Name:</span>
-					<input type="text" name="name" id="name" value="<?php echo $response09["name"]?>">
+					<input readonly type="text" name="id" id="id" value=
+					<?php echo $responses["id"]?>>
+					<span>First Name:</span>
+					<input type= "text" name="fname" id="fname" value=
+					<?php echo $responses["fname"]?>>
+					<span>Last Name:</span>
+					<input type="text" name="lname" id="lname" value=
+					<?php echo $responses["lname"]?>>
 					<span>Your Email Address:</span>
-					<input type="email" name="email" id="email" value="<?php echo $response09["email"]?>">
+					<input type="email" name="email" id="email" value=
+					<?php echo $responses["email"]?>>
 				</section>
-			
-				<section> <!--===== User Information =====-->
-					<h2>Tell Us About Yourself</h2>
-					<div>
-						<span>Your Name:</span>
-						<input type="text" name="name" id="name" required>
-					</div>
-					<div>
-						<span>Your Email Address:</span>
-						<input type="email" name="email" id="email" required>
-					</div>
-				</section>
+
 			
 <!-- Question #1 =================================================================================================-->				
 
