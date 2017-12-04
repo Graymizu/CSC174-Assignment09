@@ -68,47 +68,85 @@
 			
 <!-- Question #1 =================================================================================================-->				
 
-
+				
 				<section>
-
-					<h2>Siamese</h2>
-						
+					<h2>American Shorthair</h2>
+					
 					<figure>
-						<img src="images/siamese-cat.jpg" alt="Siamese">
+						<img src="images/american-shorthair.jpg" alt="American-Shorthair">
 					</figure>
 
-					<p>The sophisticated Siamese looks dressed for an elegant masquerade ball in pale evening wear with chic black accessories and tanzanite-blue eyes. <a href="http://cattime.com/cat-breeds/siamese-cats#/slide/1">Learn more about Siamese cats</a>.</p>
-						
+					<p>The adaptable and good-natured American Shorthair retains his hunting ability, but these days he is more likely to be a family companion. <a href="http://cattime.com/cat-breeds/american-shorthair#/slide/1">Learn more about American Shorthairs</a>.</p>				
+					
 					<div>
 						<span>Are you familiar with this breed?</span><br>
 
-						<input type="radio" name="siamese1" value="Yes">Yes<br>
-						<input type="radio" name="siamese1" value="No">No<br>
-						<input type="radio" name="siamese1" value="Unsure" required>Unsure
+						<input type="radio" name="american1" value="Yes">Yes<br>
+						<input type="radio" name="american1" value="No">No<br>
+						<input type="radio" name="american1" value="Unsure" required>Unsure
 					</div>
 
 					<div>
 						<span>What would you do with this cat (select all that apply)</span><br>
 
-						<input type="checkbox" name="siamese2a" id="siamese2a" value="Snuggle">Snuggle it<br>
-						<input type="checkbox" name="siamese2b" id="siamese2b" value="Pet">Pet It<br>
-						<input type="checkbox" name="siamese2c" id="siamese2c" value="Kick">Kick It<br>
-						<input type="checkbox" name="siamese2d" id="siamese2d" value="Let Kill">Let it Kill Things<br>
-						<input type="checkbox" name="siamese2e" id="siamese2e" value="Dress It Up">Dress It Up<br>
-						<input type="checkbox" name="siamese2f" id="siamese2f" value="Worship It">Worship It<br>
+						<input type="checkbox" name="american2a" id="american2a" value="Snuggle">Snuggle it<br>
+						<input type="checkbox" name="american2b" id="american2b" value="Pet">Pet It<br>
+						<input type="checkbox" name="american2c" id="american2c" value="Kick">Kick It<br>
+						<input type="checkbox" name="american2d" id="ameircan2d" value="Let Kill">Let it Kill Things<br>
+						<input type="checkbox" name="american2e" id="american2e" value="Dress It Up">Dress It Up<br>
+						<input type="checkbox" name="american2f" id="american2f" value="Worship It">Worship It<br>
 					</div>
 
 					<div>
 						<span>Tell us why you selected the answers above:</span><br>
-						<textarea name="siamese3" id="siamese3"></textarea>
+						<textarea name="american3" id="american3"></textarea>
 					</div>
-						
-				</section> <!-- end cat 1 -->
+				</section>
+
+				 <!-- end cat 1 -->
 
 <!-- Question #2 =================================================================================================-->				
 
-
 				<section>
+					<h2>Bengal</h2>
+					
+					<figure>
+						<img src="images/bengal.jpg" alt="Bengal">
+					</figure>
+
+					<p>The Bengal could never be called delicate. It is an athlete: agile and graceful with a strong, muscular body, as befits a cat who looks as if he belongs in the jungle. <a href="http://cattime.com/cat-breeds/bengal-cats">Learn more about Bengals</a>.</p>
+					
+					<div>
+						<span>Are you familiar with this breed?</span><br>
+
+						<input type="radio" name="bengal1" value="Yes">Yes<br>
+						<input type="radio" name="bengal1" value="No">No<br>
+						<input type="radio" name="bengal1" value="Unsure" required>Unsure
+					</div>
+
+					<div>
+						<span>What would you do with this cat (select all that apply)</span><br>
+
+						<input type="checkbox" name="bengal2a" id="bengal2a" value="Snuggle">Snuggle it<br>
+						<input type="checkbox" name="bengal2b" id="bengal2b" value="Pet">Pet It<br>
+						<input type="checkbox" name="bengal2c" id="bengal2c" value="Kick">Kick It<br>
+						<input type="checkbox" name="bengal2d" id="bengal2d" value="Let Kill">Let it Kill Things<br>
+						<input type="checkbox" name="bengal2e" id="bengal2e" value="Dress It Up">Dress It Up<br>
+						<input type="checkbox" name="bengal2f" id="bengal2f" value="Worship It">Worship It
+					</div>
+
+					<div>
+						<span>Tell us why you selected the answers above:</span><br>
+						<textarea name="bengal3" id="bengal3"></textarea>
+					</div>
+
+				</section>
+				 <!--end cat 2  -->
+
+<!-- Question #3 =================================================================================================-->						
+
+
+					<section>
 
 					<h2>Maine Coon</h2>
 					
@@ -142,44 +180,9 @@
 						<textarea name="maine3" id="maine3"></textarea>
 					</div>
 
-				</section> <!--end cat 2  -->
+				</section>
 
-<!-- Question #3 =================================================================================================-->				
-
-
-				<section>
-					<h2>American Shorthair</h2>
-					
-					<figure>
-						<img src="images/american-shorthair.jpg" alt="American-Shorthair">
-					</figure>
-
-					<p>The adaptable and good-natured American Shorthair retains his hunting ability, but these days he is more likely to be a family companion. <a href="http://cattime.com/cat-breeds/american-shorthair#/slide/1">Learn more about American Shorthairs</a>.</p>				
-					
-					<div>
-						<span>Are you familiar with this breed?</span><br>
-
-						<input type="radio" name="american1" value="Yes">Yes<br>
-						<input type="radio" name="american1" value="No">No<br>
-						<input type="radio" name="american1" value="Unsure" required>Unsure
-					</div>
-
-					<div>
-						<span>What would you do with this cat (select all that apply)</span><br>
-
-						<input type="checkbox" name="american2a" id="american2a" value="Snuggle">Snuggle it<br>
-						<input type="checkbox" name="american2b" id="american2b" value="Pet">Pet It<br>
-						<input type="checkbox" name="american2c" id="american2c" value="Kick">Kick It<br>
-						<input type="checkbox" name="american2d" id="ameircan2d" value="Let Kill">Let it Kill Things<br>
-						<input type="checkbox" name="american2e" id="american2e" value="Dress It Up">Dress It Up<br>
-						<input type="checkbox" name="american2f" id="american2f" value="Worship It">Worship It<br>
-					</div>
-
-					<div>
-						<span>Tell us why you selected the answers above:</span><br>
-						<textarea name="american3" id="american3"></textarea>
-					</div>
-				</section> <!--end cat 3 -->
+ <!--end cat 3 -->
 
 <!-- Question #4 =================================================================================================-->		
 
@@ -259,39 +262,42 @@
 <!-- Question #6 =================================================================================================-->
 
 				<section>
-					<h2>Bengal</h2>
-					
+
+					<h2>Siamese</h2>
+						
 					<figure>
-						<img src="images/bengal.jpg" alt="Bengal">
+						<img src="images/siamese-cat.jpg" alt="Siamese">
 					</figure>
 
-					<p>The Bengal could never be called delicate. It is an athlete: agile and graceful with a strong, muscular body, as befits a cat who looks as if he belongs in the jungle. <a href="http://cattime.com/cat-breeds/bengal-cats">Learn more about Bengals</a>.</p>
-					
+					<p>The sophisticated Siamese looks dressed for an elegant masquerade ball in pale evening wear with chic black accessories and tanzanite-blue eyes. <a href="http://cattime.com/cat-breeds/siamese-cats#/slide/1">Learn more about Siamese cats</a>.</p>
+						
 					<div>
 						<span>Are you familiar with this breed?</span><br>
 
-						<input type="radio" name="bengal1" value="Yes">Yes<br>
-						<input type="radio" name="bengal1" value="No">No<br>
-						<input type="radio" name="bengal1" value="Unsure" required>Unsure
+						<input type="radio" name="siamese1" value="Yes">Yes<br>
+						<input type="radio" name="siamese1" value="No">No<br>
+						<input type="radio" name="siamese1" value="Unsure" required>Unsure
 					</div>
 
 					<div>
 						<span>What would you do with this cat (select all that apply)</span><br>
 
-						<input type="checkbox" name="bengal2a" id="bengal2a" value="Snuggle">Snuggle it<br>
-						<input type="checkbox" name="bengal2b" id="bengal2b" value="Pet">Pet It<br>
-						<input type="checkbox" name="bengal2c" id="bengal2c" value="Kick">Kick It<br>
-						<input type="checkbox" name="bengal2d" id="bengal2d" value="Let Kill">Let it Kill Things<br>
-						<input type="checkbox" name="bengal2e" id="bengal2e" value="Dress It Up">Dress It Up<br>
-						<input type="checkbox" name="bengal2f" id="bengal2f" value="Worship It">Worship It
+						<input type="checkbox" name="siamese2a" id="siamese2a" value="Snuggle">Snuggle it<br>
+						<input type="checkbox" name="siamese2b" id="siamese2b" value="Pet">Pet It<br>
+						<input type="checkbox" name="siamese2c" id="siamese2c" value="Kick">Kick It<br>
+						<input type="checkbox" name="siamese2d" id="siamese2d" value="Let Kill">Let it Kill Things<br>
+						<input type="checkbox" name="siamese2e" id="siamese2e" value="Dress It Up">Dress It Up<br>
+						<input type="checkbox" name="siamese2f" id="siamese2f" value="Worship It">Worship It<br>
 					</div>
 
 					<div>
 						<span>Tell us why you selected the answers above:</span><br>
-						<textarea name="bengal3" id="bengal3"></textarea>
+						<textarea name="siamese3" id="siamese3"></textarea>
 					</div>
+						
+				</section>
 
-				</section> <!--end cat 6 -->
+				 <!--end cat 6 -->
 
 <!-- End of Survey Questions =========================================================================-->
 
