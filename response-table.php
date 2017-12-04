@@ -37,7 +37,7 @@
 		<?php include "admin-nav.inc" ?>	
 
 		
-		<h1>Hi, <?php echo $_SESSION['username']; ?>. Welcome to our site.</h1>
+		<h1>Hi, <?php echo $_SESSION['username']; ?>. Happy Editing.</h1>
 		<h1>View Responses</h1>
 
 
@@ -46,20 +46,28 @@
 		<!-- Table headers -->
 		<tr>
 			<th>ID</th>
-			<th>Name</th>
+			<th>First Name</th>
+			<th>Last Name</th>
 			<th>Email</th>
-			<th>Siamese</th>
-			<th>Why?</th>
-			<th>Maine Coon</th>
-			<th>Why?</th>
-			<th>American Shorthair</th>
-			<th>Why?</th>
-			<th>Ragamuffin</th>
-			<th>Why?</th>
-			<th>Ragdoll</th>
-			<th>Why?</th>
-			<th>Bengal</th>
-			<th>Why?</th>
+			<th>Siamese1</th>
+			<th>Siamese2</th>
+			<th>Siamese3</th>
+			<th>Maine1</th>
+			<th>Maine2</th>
+			<th>Maine3</th>
+			<th>American1</th>
+			<th>American2</th>
+			<th>American3</th>
+			<th>Ragamuffin1</th>
+			<th>Ragamuffin2</th>
+			<th>Ragamuffin3</th>
+			<th>Ragdoll1</th>
+			<th>Ragdoll2</th>
+			<th>Ragdoll3</th>
+			<th>Bengal1</th>
+			<th>Bengal2</th>
+			<th>Bengal3</th>
+
 		</tr>
 
 	<?php
