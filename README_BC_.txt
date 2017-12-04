@@ -2,9 +2,6 @@ Still planning: (working on)
 delete and update functions should let the user know if there wasn't anything to be deleted. (ex. sorry id# doesn't exist) 
 updating- survey should autofill with original answers
 
-    
-  Anthony(IA) (Things he wants me to complete) 
-  Create the "user" database based off the login code that was already uploaded. 
   
   
   For this Project, more of the PHP and MySQL code is already implemented since we are using another project. 
@@ -18,6 +15,7 @@ updating- survey should autofill with original answers
   Database- change the formatting from the last group. I organized them by cats. Every cat has 3 questions and all the types of 		questions have the same number. 
   	Made this decision because it makes it much more admin friendly to edit and quickly see which questions they need to update. 
 	And also added all the new checkboxes and different cat breeds onto the database to match the html and other documents. 
+  Created the "user" database based off the login code that was already uploaded. 
 
   
   
