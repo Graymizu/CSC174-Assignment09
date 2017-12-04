@@ -23,7 +23,7 @@
 		<form method="post" id="form" action="delete.php">
 			<span>Please enter the ID of the response you would like to delete.</span>
 			<br>
-			<input type="number" name="id" id="id">
+			<input type="number" name="id" id="id" required>
 			<input type="submit" id="delete" value="Delete!">
 		</form>
 
