@@ -5,20 +5,37 @@
 		<title>Research Survey: Cats and Cat Breeds</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="css/styles.css">
-   	 	<!--<link rel="stylesheet" href="css/grid.css">-->
-    	<!--<link rel="stylesheet" href="css/long-scrolly.css">-->
+		<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet"><!--header font-->
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"><!--body font-->
+   	 	<link rel="stylesheet" href="css/grid.css">
+    	<link rel="stylesheet" href="css/styles.css">
+    	<link rel="stylesheet" href="css/boxes.css">
 	</head>
 	
 	<body>
-		<div clss="box1">
-		<header>
-    	<div class="banner">
-			<figure>
-				<img src="images/cat banner 2.png" alt="Cats">
-			</figure>
+
+		<div class="topbar">
+		<form method="post" id="form" action="response-processor.php">
+
+			<section> <!--===== User Information =====-->
+				<h2>Tell Us About Yourself</h2>
+				<div>
+					<span>Your Name:</span>
+					<input type="text" name="name" id="name" required>
+				</div>
+				<div>
+					<span>Your Email Address:</span>
+					<input type="email" name="email" id="email" required>
+				</div>
+			</section>
 		</div>
 
+	<div class="container">
+
+		<div class="box1">
+		<header>
+
+			<div class="opaque">
 			<h1>A Cat Breed Catastrophe</h1>
 			<p>
 				A pet or companion animal is an animal kept primarily for a person's company, protection, or entertainment rather than as a working animal, livestock, or laboratory animal. Popular pets are often noted for their attractive appearances, and their loyal or playful personalities. Pets provide their owners (or guardians) physical and emotional benefits. 
@@ -28,30 +45,14 @@
 				A cat is regarded as many to be the premiere companion; they are low maintenance, fun to snuggle, and catch mice in your house.  There are numerous debates over which cat breed is in fact the American favorite.  Is it the Tabby? The Maine Coone? The Sphynx? 
 				This survey aims to understand how many pets our users currently possess and of what kind.  
 			</p>
+			</div>
+
 		</header>
-
-		<form method="post" id="form" action="response-processor.php">
-
-			<section> <!--===== User Information =====-->
-				<h2>Tell Us About Yourself</h2>
-				<div>
-					<span>First Name:</span>
-					<input type="text" name="fname" id="fname" required>
-				</div>
-				<div>
-					<span>Last Name:</span>
-					<input type="text" name="lname" id="lname" required>
-				</div>
-				<div>
-					<span>Your Email Address:</span>
-					<input type="email" name="email" id="email" required>
-				</div>
-			</section>
 			</div><!--for the box div-->
 
 <!-- Question #1 =================================================================================================-->				
 
-		<div clss="box2">
+		<div class="box2 survey">
 			<section>
 				<h2>American Shorthair</h2>
 				
@@ -89,7 +90,7 @@
 
 <!-- Question #2 =================================================================================================-->
 
-		<div clss="box3">
+		<div class="box3 survey">
 			<section>
 				<h2>Bengal</h2>
 				
@@ -128,7 +129,7 @@
 
 <!-- Question #3 =================================================================================================-->				
 
-		<div clss="box4">	
+		<div class="box4 survey">	
 			<section>
 
 				<h2>Maine Coon</h2>
@@ -168,7 +169,7 @@
 
 <!-- Question #4 =================================================================================================-->		
 		
-		<div clss="box5">
+		<div class="box5 survey">
 			<section>
 				<h2>Ragamuffin</h2>
 				
@@ -207,7 +208,7 @@
 
 <!-- Question #5 =================================================================================================-->	
 
-		<div clss="box6">
+		<div class="box6 survey">
 			<section>
 				<h2>Ragdoll</h2>
 				
@@ -246,7 +247,7 @@
 
 <!-- Question #6 =================================================================================================-->				
 
-		<div clss="box7">
+		<div class="box7 survey">
 			<section>
 				<h2>Siamese</h2>
 					
@@ -285,7 +286,8 @@
 
 
 <!-- End of Survey Questions =========================================================================-->			
-			<input type="submit" value="Submit Your Answers!">
+		<div class="box8">
+		<input type="submit" value="Submit Your Answers!">
 		</form><!-- End of survey form -->
 
 		<footer>
@@ -300,5 +302,7 @@
 				<button type="submit" name="login" value="login">Admin Login</button> 
 			</form>		
 		</section>
+		</div><!--for the box div-->
+	</div><!--for the container-->
 	</body>
 </html>
