@@ -246,11 +246,13 @@
 	$email = mysqli_real_escape_string($connection, $email);
 	$siamese1 = mysqli_real_escape_string($connection, $siamese1);
 	$maine1 = mysqli_real_escape_string($connection, $maine1);
+	$american1 = mysqli_real_escape_string($connection, $american1);
 	$ragamuffin1 = mysqli_real_escape_string($connection, $ragamuffin1);
 	$ragdoll1 = mysqli_real_escape_string($connection, $ragdoll1);
 	$bengal1 = mysqli_real_escape_string($connection, $bengal1);
 	$siamese3 = mysqli_real_escape_string($connection, $siamese3);
 	$maine3 = mysqli_real_escape_string($connection, $maine3);
+	$american3 = mysqli_real_escape_string($connection, $american3);
 	$ragamuffin3 = mysqli_real_escape_string($connection, $ragamuffin3);
 	$ragdoll3 = mysqli_real_escape_string($connection, $ragdoll3);
 	$bengal3 = mysqli_real_escape_string($connection, $bengal3);
