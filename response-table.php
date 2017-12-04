@@ -20,7 +20,7 @@
 
 	// 2. Perform database query
 	$query  = "SELECT * ";
-	$query .= "FROM responses ";
+	$query .= "FROM response09 ";
 
 
 	$result = mysqli_query($connection, $query);
@@ -78,7 +78,8 @@
 
 			<tr>
 				<td><?php echo $responses["id"]; ?></td>
-				<td><?php echo $responses["name"]; ?></td>
+				<td><?php echo $responses["fname"]; ?></td>
+				<td><?php echo $responses["lname"]; ?></td>
 				<td><?php echo $responses["email"]; ?></td>
 				<td><?php echo $responses["siamese1"].", ".$responses["siamese2a"]." ".$responses["siamese2b"]." ".$responses["siamese2c"]." ".$responses["siamese2d"]." ".$responses["siamese2e"]." ".$responses["siamese2f"]; ?></td>
 				<td><?php echo $responses["siamese3"]; ?></td>
