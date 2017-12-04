@@ -16,7 +16,7 @@
 	$dbpass = "coffee1N";
 	$dbname = "urcscon3_bronx";
 
-	$connection = new mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+	$connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
 
 	$id = (int) $_POST['id'];
 
@@ -28,18 +28,6 @@
 
 	$result = mysqli_query($connection, $query);
 	
-
-	if ($connection->connect_error) {
-		die("Connection failed" . $connection->connect_error);
-	}
-
-
-	$sql = "UPDATE response09  WHERE id= {$id}";
-
-	if ($conn->query($sql) === TRUE) {
-  	  echo "Record updated successfully";
-		} else {
-   		 echo "Error updating record: " . $connection->error;
 
 ?>
 
