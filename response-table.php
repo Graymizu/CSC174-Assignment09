@@ -49,24 +49,25 @@
 			<th>First Name</th>
 			<th>Last Name</th>
 			<th>Email</th>
-			<th>Siamese1</th>
-			<th>Siamese2</th>
-			<th>Siamese3</th>
-			<th>Maine1</th>
-			<th>Maine2</th>
-			<th>Maine3</th>
+		
 			<th>American1</th>
 			<th>American2</th>
 			<th>American3</th>
+			<th>Bengal1</th>
+			<th>Bengal2</th>
+			<th>Bengal3</th>
+			<th>Maine1</th>
+			<th>Maine2</th>
+			<th>Maine3</th>
 			<th>Ragamuffin1</th>
 			<th>Ragamuffin2</th>
 			<th>Ragamuffin3</th>
 			<th>Ragdoll1</th>
 			<th>Ragdoll2</th>
 			<th>Ragdoll3</th>
-			<th>Bengal1</th>
-			<th>Bengal2</th>
-			<th>Bengal3</th>
+			<th>Siamese1</th>
+			<th>Siamese2</th>
+			<th>Siamese3</th>
 
 		</tr>
 
@@ -81,19 +82,30 @@
 				<td><?php echo $responses["fname"]; ?></td>
 				<td><?php echo $responses["lname"]; ?></td>
 				<td><?php echo $responses["email"]; ?></td>
-				<td><?php echo $responses["siamese1"].", ".$responses["siamese2a"]." ".$responses["siamese2b"]." ".$responses["siamese2c"]." ".$responses["siamese2d"]." ".$responses["siamese2e"]." ".$responses["siamese2f"]; ?></td>
-				<td><?php echo $responses["siamese3"]; ?></td>
-				<td><?php echo $responses["maine1"].", ".$responses["maine2a"]." ".$responses["maine2b"]." ".$responses["maine2c"]." ".$responses["maine2d"]." ".$responses["maine2e"]." ".$responses["maine2f"]; ?></td>
-				<td><?php echo $responses["maine3"]; ?></td>
-				<td><?php echo $responses["american1"].", ".$responses["american2a"]." ".$responses["american2b"]." ".$responses["american2c"]." ".$responses["american2d"]." ".$responses["american2e"]." ".$responses["american2f"]; ?></td>
+
+				<td><?php echo $responses["american1"] ?></td>
+				<td><?php echo $responses["american2a"]." ".$responses["american2b"]." ".$responses["american2c"]." ".$responses["american2d"]." ".$responses["american2e"]." ".$responses["american2f"]; ?></td>
 				<td><?php echo $responses["american3"]; ?></td>
-				<td><?php echo $responses["ragamuffin1"].", ".$responses["ragamuffin2a"]." ".$responses["ragamuffin2b"]." ".$responses["ragamuffin2c"]." ".$responses["ragamuffin2d"]." ".$responses["ragamuffin2e"]." ".$responses["ragamuffin2f"]; ?></td>
-				<td><?php echo $responses["ragamuffin3"]; ?></td>
-				<td><?php echo $responses["ragdoll1"].", ".$responses["ragdoll2a"]." ".$responses["ragdoll2b"]." ".$responses["ragdoll2c"]." ".$responses["ragdoll2d"]." ".$responses["ragdoll2e"]." ".$responses["ragdoll2f"]; ?></td>
-				<td><?php echo $responses["ragdoll3"]; ?></td>
-				<td><?php echo $responses["bengal1"].", ".$responses["bengal2a"]." ".$responses["bengal2b"]." ".$responses["bengal2c"]." ".$responses["bengal2d"]." ".$responses["bengal2e"]." ".$responses["bengal2f"]; ?></td>
+
+				<td><?php echo $responses["bengal1"] ?></td>
+				<td><?php echo $responses["bengal2a"]." ".$responses["bengal2b"]." ".$responses["bengal2c"]." ".$responses["bengal2d"]." ".$responses["bengal2e"]." ".$responses["bengal2f"]; ?></td>
 				<td><?php echo $responses["bengal3"]; ?></td>
 
+				<td><?php echo $responses["maine1"] ?></td>
+				<td><?php echo $responses["maine2a"]." ".$responses["maine2b"]." ".$responses["maine2c"]." ".$responses["maine2d"]." ".$responses["maine2e"]." ".$responses["maine2f"]; ?></td>
+				<td><?php echo $responses["maine3"]; ?></td>
+
+				<td><?php echo $responses["ragamuffin1"] ?></td>
+				<td><?php echo $responses["ragamuffin2a"]." ".$responses["ragamuffin2b"]." ".$responses["ragamuffin2c"]." ".$responses["ragamuffin2d"]." ".$responses["ragamuffin2e"]." ".$responses["ragamuffin2f"]; ?></td>
+				<td><?php echo $responses["ragamuffin3"]; ?></td>
+
+				<td><?php echo $responses["ragdoll1"] ?></td>
+				<td><?php echo $responses["ragdoll2a"]." ".$responses["ragdoll2b"]." ".$responses["ragdoll2c"]." ".$responses["ragdoll2d"]." ".$responses["ragdoll2e"]." ".$responses["ragdoll2f"]; ?></td>
+				<td><?php echo $responses["ragdoll3"]; ?></td>				
+				
+				<td><?php echo $responses["siamese1"] ?></td>
+				<td><?php echo $responses["siamese2a"]." ".$responses["siamese2b"]." ".$responses["siamese2c"]." ".$responses["siamese2d"]." ".$responses["siamese2e"]." ".$responses["siamese2f"]; ?></td>
+				<td><?php echo $responses["siamese3"]; ?></td>
 				
 			</tr>
 
