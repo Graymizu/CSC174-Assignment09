@@ -91,43 +91,41 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
  
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Login</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div>
-        <h2>Login</h2>
-        <p>Please fill in your credentials to login.</p>
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+    <head>
+        <meta charset="UTF-8">
+        <title>Login</title>
+    </head>
+    <body>
+        <div>
+            <h2>Login</h2>
+            <p>Please fill in your credentials to login.</p>
+            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
 
-            <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
-                <label>Username:<sup>*</sup></label>
-                <input type="text" name="username"class="form-control" value="<?php echo $username; ?>">
-                <span class="help-block"><?php echo $username_err; ?></span>
-            </div>
+                <div <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>>
+                    <label>Username:<sup>*</sup></label>
+                    <input type="text" name="username"class="form-control" value="<?php echo $username; ?>">
+                    <span class="help-block"><?php echo $username_err; ?></span>
+                </div>
 
-            <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
-                <label>Password:<sup>*</sup></label>
-                <input type="password" name="password" class="form-control">
-                <span class="help-block"><?php echo $password_err; ?></span>
-            </div>
+                <div <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>>
+                    <label>Password:<sup>*</sup></label>
+                    <input type="password" name="password" class="form-control">
+                    <span class="help-block"><?php echo $password_err; ?></span>
+                </div>
 
-            <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
-                <label>Admin Code:<sup>*</sup></label>
-                <input type="password" name="admincode">
-                <span><?php echo $admincode_err; ?> THIS IS IT!!!:<?php echo $admincode; ?></span>
-            </div>
+                <div <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>>
+                    <label>Admin Code:<sup>*</sup></label>
+                    <input type="password" name="admincode">
+                    <span><?php echo $admincode_err; ?></span>
+                </div>
 
-            <div>
-                <input type="submit" class="btn btn-primary" value="Submit">
-            </div>
+                <div>
+                    <input type="submit" value="Submit">
+                </div>
 
-            <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
-            
-        </form>
-    </div>    
-</body>
+                <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
+                
+            </form>
+        </div>    
+    </body>
 </html>

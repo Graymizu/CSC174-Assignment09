@@ -98,8 +98,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <head>
     <meta charset="UTF-8">
     <title>Sign Up</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
-    <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
     <div class="wrapper">
@@ -107,26 +106,26 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         <p>Please fill this form to create an account.</p>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
 
-            <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
+            <div <?php echo (!empty($username_err)) ? 'has-error' : ''; ?> >
                 <label>Username:<sup>*</sup></label>
                 <input type="text" name="username" value="<?php echo $username; ?>" required>
-                <span class="help-block"><?php echo $username_err; ?></span>
+                <span><?php echo $username_err; ?></span>
             </div>
 
-            <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
+            <div <?php echo (!empty($password_err)) ? 'has-error' : ''; ?> >
                 <label>Password:<sup>*</sup></label>
                 <input type="password" name="password" value="<?php echo $password; ?>" required>
-                <span class="help-block"><?php echo $password_err; ?></span>
+                <span><?php echo $password_err; ?></span>
             </div>
 
-            <div class="form-group <?php echo (!empty($confirm_password_err)) ? 'has-error' : ''; ?>" >
+            <div <?php echo (!empty($confirm_password_err)) ? 'has-error' : ''; ?> >
                 <label>Confirm Password:<sup>*</sup></label>
                 <input type="password" name="confirm_password" value="<?php echo $confirm_password; ?>" required>
-                <span class="help-block"><?php echo $confirm_password_err; ?></span>
+                <span><?php echo $confirm_password_err; ?></span>
             </div>
 
             <div>
-                <input type="submit" class="btn btn-primary" value="Submit">
+                <input type="submit"  value="Submit">
             </div>
             
             <p>Already have an account? <a href="login.php">Login here</a>.</p>
