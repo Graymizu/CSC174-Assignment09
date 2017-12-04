@@ -35,11 +35,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Validate credentials
     if(empty($username_err) && empty($password_err)){
         // Prepare a select statement
-        $sql = "SELECT username, password FROM users WHERE username = username";
+        $sql = "SELECT username, password FROM users WHERE username = ?";
         
         if($stmt = mysqli_prepare($link, $sql)){
             // Bind variables to the prepared statement as parameters
-            mysqli_stmt_bind_param($stmt, "s", $param_username);
+            mysqli_stmt_bind_param($stmt, "s", $username);
             
             // Set parameters
             $param_username = $username;
@@ -52,9 +52,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 // Check if username exists, if yes then verify password
                 if(mysqli_stmt_num_rows($stmt) == 1){                    
                     // Bind result variables
-                    mysqli_stmt_bind_result($stmt, $username, $hashed_password, $hashed_admincode);
+                    mysqli_stmt_bind_result($stmt, $username, $hashed_password);
                     if(mysqli_stmt_fetch($stmt)){
-                        if (password_verify($admincode, $hashed_admincode)) {
+                        if ($admincode == 1234) {
                         
                             if(password_verify($password, $hashed_password)){
                                 /* Password is correct, so start a new session and
@@ -67,7 +67,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                                 $password_err = 'The password you entered was not valid.';
                             }
                         }else{
-                             // Display an error message if password is not valid
+                             // Display an error message if admin is not valid
                                 $admincode_err = 'The admin code you entered was not valid.';
                         }
                     }
@@ -118,7 +118,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
                 <label>Admin Code:<sup>*</sup></label>
                 <input type="password" name="admincode">
-                <span><?php echo $admincode_err; ?></span>
+                <span><?php echo $admincode_err; ?> THIS IS IT!!!:<?php echo $admincode; ?></span>
             </div>
 
             <div>
