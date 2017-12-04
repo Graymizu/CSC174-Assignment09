@@ -9,6 +9,7 @@
 	}
 ?>
 
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -24,7 +25,7 @@
 		<form method="post" id="form" action="update.php">
 			<span>Please enter the ID of the response you would like to update.</span>
 			<br>
-			<input type="number" name="id" id="id">
+			<input type="number" name="id" id="id" >
 			<input type="submit" id="update" value="Find Response">
 		</form>
 
