@@ -78,10 +78,7 @@ header{
 	padding-top:70px;
 	min-height: 100%;
 	padding-left: 300px;
-	padding-right: 350px;
-	background-image: url('../images/logincat.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
+	padding-right: 300px;
 }
 
 .boxlogin h2{
@@ -101,13 +98,25 @@ header{
 	width: 250px;
 }
 
+.login1{
+	background-image: url('../images/logincat.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.login2{
+	background-image: url('../images/makelogincat.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 .opaque{
 	background-color: rgba(238,233,233, 0.4);
 	padding: 18px 15px 15px 15px;
 }
 
 .opaque2{
-	background-color: rgba(238,233,233, 0.4);
+	background-color: rgba(238,233,233, 0.5);
 	padding: 28px 35px 25px 25px;
 }
 
