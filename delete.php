@@ -26,8 +26,9 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 
 	
 
+
 	// 2. Perform database query
-	$query  = "DELETE FROM response09 ";
+	$query  = "DELETE FROM responses ";
 	$query .= "WHERE id = {$id} ";
 	$query .= "LIMIT 1";
 
@@ -41,8 +42,15 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 <html lang="en">
 	<head>
 		<title>Database Delete - Subjects table</title>
-	</head>
-	<body>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+    	<link rel="stylesheet" href="css/styles.css">
+    	<link rel="stylesheet" href="css/boxes.css">
+    	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+    	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+   </head>
+   <body>
+       <div class=" box1 container">
+
 		
 		<?php include "admin-nav.inc" ?>
 
@@ -56,7 +64,7 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 				die("Database query failed.");
 			}
 		?>
-
+	</div>
 	</body>
 </html>
 
