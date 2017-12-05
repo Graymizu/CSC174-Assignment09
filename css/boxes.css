@@ -110,6 +110,13 @@ header{
 	background-size: cover;
 }
 
+
+.login3{
+	background-image: url('../images/catthanks.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 .opaque{
 	background-color: rgba(238,233,233, 0.4);
 	padding: 18px 15px 15px 15px;
