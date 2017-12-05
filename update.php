@@ -83,25 +83,25 @@
 					<div>
 						<span>Are you familiar with this breed?</span><br>
 
-						<input type="radio" name="american1" value="Yes">Yes<br>
-						<input type="radio" name="american1" value="No">No <br>
-						<input type="radio" name="american1" value="Unsure" required> Unsure
+						<input type="radio" name="american1" value="Yes" <?php echo ($responses['american1'] != "" ? "checked" : ""); ?>>Yes<br>
+						<input type="radio" name="american1" value="No"<?php echo ($responses['american1'] != "" ? "checked" : ""); ?>>No <br>
+						<input type="radio" name="american1" value="Unsure" <?php echo ($responses['american1'] != "" ? "checked" : ""); ?> required> Unsure
 					</div>
 
 					<div>
 						<span>What would you do with this cat (select all that apply)</span><br>
 
 						<input type="checkbox" name="american2a" id="american2a" value="Snuggle" <?php echo ($responses['american2a'] != "" ? "checked" : ""); ?>>Snuggle it<br>
-						<input type="checkbox" name="american2b" id="american2b" value="Pet">Pet It<br>
-						<input type="checkbox" name="american2c" id="american2c" value="Kick">Kick It<br>
-						<input type="checkbox" name="american2d" id="ameircan2d" value="Let Kill">Let it Kill Things<br>
-						<input type="checkbox" name="american2e" id="american2e" value="Dress It Up">Dress It Up<br>
-						<input type="checkbox" name="american2f" id="american2f" value="Worship It">Worship It<br>
+						<input type="checkbox" name="american2b" id="american2b" value="Pet" <?php echo ($responses['american2b'] != "" ? "checked" : ""); ?>>Pet It<br>
+						<input type="checkbox" name="american2c" id="american2c" value="Kick" <?php echo ($responses['american2c'] != "" ? "checked" : ""); ?>>Kick It<br>
+						<input type="checkbox" name="american2d" id="ameircan2d" value="Let Kill" <?php echo ($responses['american2d'] != "" ? "checked" : ""); ?>>Let it Kill Things<br>
+						<input type="checkbox" name="american2e" id="american2e" value="Dress It Up" <?php echo ($responses['american2e'] != "" ? "checked" : ""); ?>>Dress It Up<br>
+						<input type="checkbox" name="american2f" id="american2f" value="Worship It" <?php echo ($responses['american2f'] != "" ? "checked" : ""); ?>>Worship It<br>
 					</div>
 
 					<div>
 						<span>Tell us why you selected the answers above:</span><br>
-						<textarea name="american3" id="american3"></textarea>
+						<textarea name="american3" id="american3" value= <?php echo $responses["american3"]?>></textarea>
 					</div>
 				</section>
 
@@ -121,26 +121,26 @@
 					<div>
 						<span>Are you familiar with this breed?</span><br>
 
-						<input type="radio" name="bengal1" value="Yes">Yes<br>
-						<input type="radio" name="bengal1" value="No">No<br>
-						<input type="radio" name="bengal1" value="Unsure" required>Unsure
+						<input type="radio" name="bengal1" value="Yes" <?php echo ($responses['bengal1'] != "" ? "checked" : ""); ?>>Yes<br>
+						<input type="radio" name="bengal1" value="No" <?php echo ($responses['bengal1'] != "" ? "checked" : ""); ?>>No<br>
+						<input type="radio" name="bengal1" value="Unsure" <?php echo ($responses['bengal1'] != "" ? "checked" : ""); ?> required>Unsure
 					</div>
 
 					<div>
 						<span>What would you do with this cat (select all that apply)</span><br>
 
 
-						<input type="checkbox" name="bengal2a" id="bengal2a" value="Snuggle">Snuggle it<br>
-						<input type="checkbox" name="bengal2b" id="bengal2b" value="Pet">Pet It<br>
-						<input type="checkbox" name="bengal2c" id="bengal2c" value="Kick">Kick It<br>
-						<input type="checkbox" name="bengal2d" id="bengal2d" value="Let Kill">Let it Kill Things<br>
-						<input type="checkbox" name="bengal2e" id="bengal2e" value="Dress It Up">Dress It Up<br>
-						<input type="checkbox" name="bengal2f" id="bengal2f" value="Worship It">Worship It
+						<input type="checkbox" name="bengal2a" id="bengal2a" value="Snuggle" <?php echo ($responses['bengal2a'] != "" ? "checked" : ""); ?>>Snuggle it<br>
+						<input type="checkbox" name="bengal2b" id="bengal2b" value="Pet" <?php echo ($responses['bengal2b'] != "" ? "checked" : ""); ?>>Pet It<br>
+						<input type="checkbox" name="bengal2c" id="bengal2c" value="Kick" <?php echo ($responses['bengal2c'] != "" ? "checked" : ""); ?>>Kick It<br>
+						<input type="checkbox" name="bengal2d" id="bengal2d" value="Let Kill" <?php echo ($responses['bengal2d'] != "" ? "checked" : ""); ?>>Let it Kill Things<br>
+						<input type="checkbox" name="bengal2e" id="bengal2e" value="Dress It Up" <?php echo ($responses['bengal2e'] != "" ? "checked" : ""); ?>>Dress It Up<br>
+						<input type="checkbox" name="bengal2f" id="bengal2f" value="Worship It" <?php echo ($responses['bengal2f'] != "" ? "checked" : ""); ?>>Worship It
 					</div>
 
 					<div>
 						<span>Tell us why you selected the answers above:</span><br>
-						<textarea name="bengal3" id="bengal3"></textarea>
+						<textarea name="bengal3" id="bengal3" value= <?php echo $responses["bengal3"]?>></textarea>
 					</div>
 
 				</section>
@@ -162,25 +162,25 @@
 					<div>
 						<span>Are you familiar with this breed?</span><br>
 
-						<input type="radio" name="maine1" value="Yes">Yes<br>
-						<input type="radio" name="maine1" value="No">No<br>
-						<input type="radio" name="maine1" value="Unsure" required>Unsure
+						<input type="radio" name="maine1" value="Yes" <?php echo ($responses['maine1'] != "" ? "checked" : ""); ?>>Yes<br>
+						<input type="radio" name="maine1" value="No" <?php echo ($responses['maine1'] != "" ? "checked" : ""); ?>>No<br>
+						<input type="radio" name="maine1" value="Unsure" <?php echo ($responses['maine1'] != "" ? "checked" : ""); ?> required>Unsure
 					</div>
 
 					<div>
 						<span>What would you do with this cat (select all that apply)</span><br>
 
-						<input type="checkbox" name="maine2a" id="maine2a" value="Snuggle">Snuggle it<br>
-						<input type="checkbox" name="maine2b" id="maine2b" value="Pet">Pet It<br>
-						<input type="checkbox" name="maine2c" id="maine2c" value="Kick">Kick It<br>
-						<input type="checkbox" name="maine2d" id="maine2d" value="Let Kill">Let it Kill Things<br>
-						<input type="checkbox" name="maine2e" id="maine2e" value="Dress It Up">Dress It Up<br>
-						<input type="checkbox" name="maine2f" id="maine2f" value="Worship It">Worship It<br>
+						<input type="checkbox" name="maine2a" id="maine2a" value="Snuggle" <?php echo ($responses['maine2a'] != "" ? "checked" : ""); ?>>Snuggle it<br>
+						<input type="checkbox" name="maine2b" id="maine2b" value="Pet" <?php echo ($responses['maine2b'] != "" ? "checked" : ""); ?>>Pet It<br>
+						<input type="checkbox" name="maine2c" id="maine2c" value="Kick" <?php echo ($responses['maine2c'] != "" ? "checked" : ""); ?>>Kick It<br>
+						<input type="checkbox" name="maine2d" id="maine2d" value="Let Kill" <?php echo ($responses['maine2d'] != "" ? "checked" : ""); ?>>Let it Kill Things<br>
+						<input type="checkbox" name="maine2e" id="maine2e" value="Dress It Up" <?php echo ($responses['maine2e'] != "" ? "checked" : ""); ?>>Dress It Up<br>
+						<input type="checkbox" name="maine2f" id="maine2f" value="Worship It" <?php echo ($responses['maine2f'] != "" ? "checked" : ""); ?>>Worship It<br>
 					</div>
 
 					<div>
 						<span>Tell us why you selected the answers above:</span><br>
-						<textarea name="maine3" id="maine3"></textarea>
+						<textarea name="maine3" id="maine3" value= <?php echo $responses["maine3"]?>></textarea>
 					</div>
 
 				</section>
@@ -201,25 +201,25 @@
 					<div>
 						<span>Are you familiar with this breed?</span><br>
 
-						<input type="radio" name="ragamuffin1" value="Yes">Yes<br>
-						<input type="radio" name="ragamuffin1" value="No">No<br>
-						<input type="radio" name="ragamuffin1" value="Unsure" required>Unsure
+						<input type="radio" name="ragamuffin1" value="Yes" <?php echo ($responses['ragamuffin1'] != "" ? "checked" : ""); ?>>Yes<br>
+						<input type="radio" name="ragamuffin1" value="No" <?php echo ($responses['ragamuffin1'] != "" ? "checked" : ""); ?>>No<br>
+						<input type="radio" name="ragamuffin1" value="Unsure" <?php echo ($responses['ragamuffin1'] != "" ? "checked" : ""); ?> required>Unsure
 					</div>
 
 					<div>
 						<span>What would you do with this cat (select all that apply)</span><br>
 
-						<input type="checkbox" name="ragamuffin2a" id="ragamuffin2a" value="Snuggle">Snuggle it<br>
-						<input type="checkbox" name="ragamuffin2b" id="ragamuffin2b" value="Pet">Pet It<br>
-						<input type="checkbox" name="ragamuffin2c" id="ragamuffin2c" value="Kick">Kick It<br>
-						<input type="checkbox" name="ragamuffin2d" id="ragamuffin2d" value="Let Kill">Let it Kill Things<br>
-						<input type="checkbox" name="ragamuffin2e" id="ragamuffin2e" value="Dress It Up">Dress It Up<br>
-						<input type="checkbox" name="ragamuffin2f" id="ragamuffin2f" value="Worship It">Worship It
+						<input type="checkbox" name="ragamuffin2a" id="ragamuffin2a" value="Snuggle" <?php echo ($responses['ragamuffin2a'] != "" ? "checked" : ""); ?>>Snuggle it<br>
+						<input type="checkbox" name="ragamuffin2b" id="ragamuffin2b" value="Pet" <?php echo ($responses['ragamuffin2b'] != "" ? "checked" : ""); ?>>Pet It<br>
+						<input type="checkbox" name="ragamuffin2c" id="ragamuffin2c" value="Kick" <?php echo ($responses['ragamuffin2c'] != "" ? "checked" : ""); ?>>Kick It<br>
+						<input type="checkbox" name="ragamuffin2d" id="ragamuffin2d" value="Let Kill" <?php echo ($responses['ragamuffin2d'] != "" ? "checked" : ""); ?>>Let it Kill Things<br>
+						<input type="checkbox" name="ragamuffin2e" id="ragamuffin2e" value="Dress It Up" <?php echo ($responses['ragamuffin2e'] != "" ? "checked" : ""); ?>>Dress It Up<br>
+						<input type="checkbox" name="ragamuffin2f" id="ragamuffin2f" value="Worship It" <?php echo ($responses['ragamuffin2f'] != "" ? "checked" : ""); ?>>Worship It
 					</div>
 
 					<div>
 						<span>Tell us why you selected the answers above:</span><br>
-						<textarea name="ragamuffin3" id="ragamuffin3"></textarea>
+						<textarea name="ragamuffin3" id="ragamuffin3" value= <?php echo $responses["ragamuffin3"]?>></textarea>
 					</div>
 
 				</section> <!--end cat 4 -->
@@ -239,25 +239,25 @@
 					<div>
 						<span>Are you familiar with this breed?</span><br>
 
-						<input type="radio" name="ragdoll1" value="Yes">Yes<br>
-						<input type="radio" name="ragdoll1" value="No">No<br>
-						<input type="radio" name="ragdoll1" value="Unsure" required>Unsure
+						<input type="radio" name="ragdoll1" value="Yes" <?php echo ($responses['ragdoll1'] != "" ? "checked" : ""); ?>>Yes<br>
+						<input type="radio" name="ragdoll1" value="No" <?php echo ($responses['ragdoll1'] != "" ? "checked" : ""); ?>>No<br>
+						<input type="radio" name="ragdoll1" value="Unsure" <?php echo ($responses['ragdoll1'] != "" ? "checked" : ""); ?> required>Unsure
 					</div>
 
 					<div>
 						<span>What would you do with this cat (select all that apply)</span><br>
 
-						<input type="checkbox" name="ragdoll2a" id="ragdoll2a" value="Snuggle">Snuggle it<br>
-						<input type="checkbox" name="ragdoll2b" id="ragdoll2b" value="Pet">Pet It<br>
-						<input type="checkbox" name="ragdoll2c" id="ragdoll2c" value="Kick">Kick It<br>
-						<input type="checkbox" name="ragdoll2d" id="ragdoll2d" value="Let Kill">Let it Kill Things<br>
-						<input type="checkbox" name="ragdoll2e" id="ragdoll2e" value="Dress It Up">Dress It Up<br>
-						<input type="checkbox" name="ragdoll2f" id="ragdoll2f" value="Worship It">Worship It
+						<input type="checkbox" name="ragdoll2a" id="ragdoll2a" value="Snuggle" <?php echo ($responses['ragdoll2a'] != "" ? "checked" : ""); ?>>Snuggle it<br>
+						<input type="checkbox" name="ragdoll2b" id="ragdoll2b" value="Pet" <?php echo ($responses['ragdoll2b'] != "" ? "checked" : ""); ?>>Pet It<br>
+						<input type="checkbox" name="ragdoll2c" id="ragdoll2c" value="Kick" <?php echo ($responses['ragdoll2c'] != "" ? "checked" : ""); ?>>Kick It<br>
+						<input type="checkbox" name="ragdoll2d" id="ragdoll2d" value="Let Kill" <?php echo ($responses['ragdoll2d'] != "" ? "checked" : ""); ?>>Let it Kill Things<br>
+						<input type="checkbox" name="ragdoll2e" id="ragdoll2e" value="Dress It Up" <?php echo ($responses['ragdoll2e'] != "" ? "checked" : ""); ?>>Dress It Up<br>
+						<input type="checkbox" name="ragdoll2f" id="ragdoll2f" value="Worship It" <?php echo ($responses['ragdoll2f'] != "" ? "checked" : ""); ?>>Worship It
 					</div>
 
 					<div>
 						<span>Tell us why you selected the answers above:</span><br>
-						<textarea name="ragdoll3" id="ragdoll3"></textarea>
+						<textarea name="ragdoll3" id="ragdoll3" value= <?php echo $responses["ragdoll3"]?>></textarea>
 					</div>
 
 				</section> <!--end cat 5 -->
@@ -277,25 +277,25 @@
 					<div>
 						<span>Are you familiar with this breed?</span><br>
 
-						<input type="radio" name="siamese1" value="Yes">Yes<br>
-						<input type="radio" name="siamese1" value="No">No<br>
-						<input type="radio" name="siamese1" value="Unsure" required>Unsure
+						<input type="radio" name="siamese1" value="Yes" <?php echo ($responses['siamese1'] != "" ? "checked" : ""); ?>>Yes<br>
+						<input type="radio" name="siamese1" value="No" <?php echo ($responses['siamese1'] != "" ? "checked" : ""); ?>>No<br>
+						<input type="radio" name="siamese1" value="Unsure" <?php echo ($responses['siamese1'] != "" ? "checked" : ""); ?> required>Unsure
 					</div>
 
 					<div>
 						<span>What would you do with this cat (select all that apply)</span><br>
 
-						<input type="checkbox" name="siamese2a" id="siamese2a" value="Snuggle">Snuggle it<br>
-						<input type="checkbox" name="siamese2b" id="siamese2b" value="Pet">Pet It<br>
-						<input type="checkbox" name="siamese2c" id="siamese2c" value="Kick">Kick It<br>
-						<input type="checkbox" name="siamese2d" id="siamese2d" value="Let Kill">Let it Kill Things<br>
-						<input type="checkbox" name="siamese2e" id="siamese2e" value="Dress It Up">Dress It Up<br>
-						<input type="checkbox" name="siamese2f" id="siamese2f" value="Worship It">Worship It<br>
+						<input type="checkbox" name="siamese2a" id="siamese2a" value="Snuggle" <?php echo ($responses['siamese2a'] != "" ? "checked" : ""); ?>>Snuggle it<br>
+						<input type="checkbox" name="siamese2b" id="siamese2b" value="Pet" <?php echo ($responses['siamese2b'] != "" ? "checked" : ""); ?>>Pet It<br>
+						<input type="checkbox" name="siamese2c" id="siamese2c" value="Kick" <?php echo ($responses['siamese2c'] != "" ? "checked" : ""); ?>>Kick It<br>
+						<input type="checkbox" name="siamese2d" id="siamese2d" value="Let Kill" <?php echo ($responses['siamese2d'] != "" ? "checked" : ""); ?>>Let it Kill Things<br>
+						<input type="checkbox" name="siamese2e" id="siamese2e" value="Dress It Up" <?php echo ($responses['siamese2e'] != "" ? "checked" : ""); ?>>Dress It Up<br>
+						<input type="checkbox" name="siamese2f" id="siamese2f" value="Worship It" <?php echo ($responses['siamese2f'] != "" ? "checked" : ""); ?>>Worship It<br>
 					</div>
 
 					<div>
 						<span>Tell us why you selected the answers above:</span><br>
-						<textarea name="siamese3" id="siamese3"></textarea>
+						<textarea name="siamese3" id="siamese3" value= <?php echo $responses["siamese3"]?>></textarea>
 					</div>
 						
 				</section>
