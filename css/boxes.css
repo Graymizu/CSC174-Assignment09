@@ -1,3 +1,4 @@
+
 html, body {
     margin: 0;
     height: 100%;
@@ -5,7 +6,7 @@ html, body {
 }
 
 header{
-	margin-bottom: 15px;
+	margin bottom: 15px;
 }
 
 /*	*************************Box management**************************** */
@@ -16,7 +17,8 @@ header{
 	padding-left: 45px;
 	padding-right: 35px;
 	margin-top: 0px;
-	margin-bottom: 60px;
+	margin bottom: 60px;
+	margin color: red;
 	padding-bottom: 90px;
    	padding-top: 105px;
 }
@@ -72,7 +74,7 @@ header{
 
 .boxlogin{
 	background-color: #EEE8AA;
-	padding-bottom: 70px;
+	padding bottom: 70px;
 	padding-top:70px;
 	min-height: 100%;
 	padding-left: 300px;
@@ -113,6 +115,15 @@ header{
 	background-image: url('../images/catthanks.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
+	text-align: center;
+margin top:75px;}
+
+.login3 h1{
+	text-align: center;
+}
+
+.spacing{
+	padding-top: 200px;
 }
 
 .opaque{
@@ -124,6 +135,14 @@ header{
 	background-color: rgba(238,233,233, 0.5);
 	padding: 28px 35px 25px 25px;
 }
+
+.opaque3{
+	background-color: rgba(238,233,233, 0.6);
+	padding-top: 150px;
+	padding-left: 15px;
+	padding right: 15px;
+	padding-bottom: 155px;
+	}
 
 /********************Top Bar********************/
 .topbar {
@@ -160,7 +179,5 @@ input[type=submit] {
     font-size: 20px;
 }
 
-input[type=submit] 
-:hover {
-background-color: green;
-}
+input[type=submit] :hover{
+]background-color:green"}
