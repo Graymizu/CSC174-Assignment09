@@ -13,300 +13,137 @@
 	*/	
 	
 	//Get values and escape strings
-	if (isset($_POST['fname'])) 
-	$fname = trim(stripslashes($_POST['fname']));
-
-	if (isset($_POST['lname'])) 
-	$lname = trim(stripslashes($_POST['lname']));
-
-	if (isset($_POST['email'])) 
+	$name = trim(stripslashes($_POST['name']));
 	$email = trim(stripslashes($_POST['email']));
 
 	//error fix for radio buttons and checkboxes
 	$blank = "";
-	if(empty($_POST['siamese1'])){
-		$siamese1 = $blank;
+	if(empty($_POST['familiar1'])){
+		$fam1 = $blank;
 	}else{
-		$siamese1 = Trim(stripslashes($_POST['siamese1']));
+		$fam1 = Trim(stripslashes($_POST['familiar1']));
 	}
-	if(empty($_POST['siamese2a'])){
-		$siamese2a = $blank;
+	if(empty($_POST['do1a'])){
+		$do1a = $blank;
 	}else{
-		$siamese2a = $_POST['siamese2a']; 
+		$do1a = $_POST['do1a']; 
 	}
-	if(empty($_POST['siamese2b'])){
-		$siamese2b = $blank;
+	if(empty($_POST['do1b'])){
+		$do1b = $blank;
 	}else{
-		$siamese2b = $_POST['siamese2b']; 
+		$do1b = $_POST['do1b']; 
 	}
-	if(empty($_POST['siamese2c'])){
-		$siamese2c = $blank;
+	if(empty($_POST['do1c'])){
+		$do1c = $blank;
 	}else{
-		$siamese2c = $_POST['siamese2c']; 
+		$do1c = $_POST['do1c']; 
 	}
-	if(empty($_POST['siamese2d'])){
-		$siamese2d = $blank;
+	if(empty($_POST['do1d'])){
+		$do1d = $blank;
 	}else{
-		$siamese2d = $_POST['siamese2d']; 
+		$do1d = $_POST['do1d']; 
 	}
-	if(empty($_POST['siamese2e'])){
-		$siamese2e = $blank;
+	if(empty($_POST['do1e'])){
+		$do1e = $blank;
 	}else{
-		$siamese2e = $_POST['siamese2e']; 
+		$do1e = $_POST['do1e']; 
 	}
-	if(empty($_POST['siamese2f'])){
-		$siamese2f = $blank;
+	if(empty($_POST['do1f'])){
+		$do1f = $blank;
 	}else{
-		$siamese2f = $_POST['siamese2f']; 
+		$do1f = $_POST['do1f']; 
 	}
-	if (isset($_POST['siamese3'])) 
-	$siamese3 = Trim(stripslashes($_POST['siamese3']));
+	$why1 = Trim(stripslashes($_POST['why1']));
 
 
 	
-	if(empty($_POST['maine1'])){
-		$maine1 = $blank;
+	if(empty($_POST['familiar2'])){
+		$fam2 = $blank;
 	}else{
-		$maine1 = Trim(stripslashes($_POST['maine1']));
+		$fam2 = Trim(stripslashes($_POST['familiar2']));
 	}
-	if(empty($_POST['maine2a'])){
-		$maine2a = $blank;
+	if(empty($_POST['do2a'])){
+		$do2a = $blank;
 	}else{
-		$maine2a = $_POST['maine2a'];
+		$do2a = $_POST['do2a'];
 	}
-	if(empty($_POST['maine2b'])){
-		$maine2b = $blank;
+	if(empty($_POST['do2b'])){
+		$do2b = $blank;
 	}else{
-		$maine2b = $_POST['maine2b'];
+		$do2b = $_POST['do2b'];
 	}
-	if(empty($_POST['maine2c'])){
-		$maine2c = $blank;
+	if(empty($_POST['do2c'])){
+		$do2c = $blank;
 	}else{
-		$maine2c = $_POST['maine2c'];
+		$do2c = $_POST['do2c'];
 	}
-	if(empty($_POST['maine2d'])){
-		$maine2d = $blank;
+	if(empty($_POST['do2d'])){
+		$do2d = $blank;
 	}else{
-		$maine2d = $_POST['maine2d'];
+		$do2d = $_POST['do2d'];
 	}
-	if(empty($_POST['maine2e'])){
-		$maine2e = $blank;
+	if(empty($_POST['do2e'])){
+		$do2e = $blank;
 	}else{
-		$maine2e = $_POST['maine2e'];
+		$do2e = $_POST['do2e'];
 	}
-	if(empty($_POST['maine2f'])){
-		$maine2f = $blank;
+	if(empty($_POST['do2f'])){
+		$do2f = $blank;
 	}else{
-		$maine2f = $_POST['maine2f'];
+		$do2f = $_POST['do2f'];
 	}
-	if (isset($_POST['maine3'])) 
-	$maine3 = Trim(stripslashes($_POST['maine3']));
+	$why2 = Trim(stripslashes($_POST['why2']));
+
 
 	
-	if(empty($_POST['american1'])){
-		$american1 = $blank;
+	$fam3 = trim(stripslashes($_POST['familiar3']));
+	if(empty($_POST['do3a'])){
+		$do3a = $blank;
 	}else{
-		$american1 = Trim(stripslashes($_POST['american1']));
+		$do3a = $_POST['do3a'];
 	}
-	if(empty($_POST['american2a'])){
-		$american2a = $blank;
+	if(empty($_POST['do3b'])){
+		$do3b = $blank;
 	}else{
-		$american2a = $_POST['american2a'];
+		$do3b = $_POST['do3b'];
 	}
-	if(empty($_POST['american2b'])){
-		$american2b = $blank;
+	if(empty($_POST['do3c'])){
+		$do3c = $blank;
 	}else{
-		$american2b = $_POST['american2b'];
+		$do3c = $_POST['do3c'];
 	}
-	if(empty($_POST['american2c'])){
-		$american2c = $blank;
+	if(empty($_POST['do3d'])){
+		$do3d = $blank;
 	}else{
-		$american2c = $_POST['american2c'];
+		$do3d = $_POST['do3d'];
 	}
-	if(empty($_POST['american2d'])){
-		$american2d = $blank;
+	if(empty($_POST['do3e'])){
+		$do3e = $blank;
 	}else{
-		$american2d = $_POST['american2d'];
+		$do3e = $_POST['do3e'];
 	}
-	if(empty($_POST['american2e'])){
-		$american2e = $blank;
+	if(empty($_POST['do3f'])){
+		$do3f = $blank;
 	}else{
-		$american2e = $_POST['american2e'];
+		$do3f = $_POST['do3f'];
 	}
-	if(empty($_POST['american2f'])){
-		$american2f = $blank;
-	}else{
-		$american2f = $_POST['american2f'];
-	}
-	if (isset($_POST['american3'])) 
-	$american3 = Trim(stripslashes($_POST['american3']));
-
-
-	if(empty($_POST['ragamuffin1'])){
-		$ragamuffin1 = $blank;
-	}else{
-		$ragamuffin1 = Trim(stripslashes($_POST['ragamuffin1']));
-	}
-	if(empty($_POST['ragamuffin2a'])){
-		$ragamuffin2a = $blank;
-	}else{
-		$ragamuffin2a = $_POST['ragamuffin2a'];
-	}
-	if(empty($_POST['ragamuffin2b'])){
-		$ragamuffin2b = $blank;
-	}else{
-		$ragamuffin2b = $_POST['ragamuffin2b'];
-	}
-	if(empty($_POST['ragamuffin2c'])){
-		$ragamuffin2c = $blank;
-	}else{
-		$ragamuffin2c = $_POST['ragamuffin2c'];
-	}
-	if(empty($_POST['ragamuffin2d'])){
-		$ragamuffin2d = $blank;
-	}else{
-		$ragamuffin2d = $_POST['ragamuffin2d'];
-	}
-	if(empty($_POST['ragamuffin2e'])){
-		$ragamuffin2e = $blank;
-	}else{
-		$ragamuffin2e = $_POST['ragamuffin2e'];
-	}
-	if(empty($_POST['ragamuffin2f'])){
-		$ragamuffin2f = $blank;
-	}else{
-		$ragamuffin2f = $_POST['ragamuffin2f'];
-	}
-	if (isset($_POST['ragamuffin3'])) 
-	$ragamuffin3 = Trim(stripslashes($_POST['ragamuffin3']));
-
+	$why3 = Trim(stripslashes($_POST['why3']));
 	
-	if(empty($_POST['ragdoll1'])){
-		$ragdoll1 = $blank;
-	}else{
-		$ragdoll1 = Trim(stripslashes($_POST['ragdoll1']));
-	}
-	if(empty($_POST['ragdoll2a'])){
-		$ragdoll2a = $blank;
-	}else{
-		$ragdoll2a = $_POST['ragdoll2a'];
-	}
-	if(empty($_POST['ragdoll2b'])){
-		$ragdoll2b = $blank;
-	}else{
-		$ragdoll2b = $_POST['ragdoll2b'];
-	}
-	if(empty($_POST['ragdoll2c'])){
-		$ragdoll2c = $blank;
-	}else{
-		$ragdoll2c = $_POST['ragdoll2c'];
-	}
-	if(empty($_POST['ragdoll2d'])){
-		$ragdoll2d = $blank;
-	}else{
-		$ragdoll2d = $_POST['ragdoll2d'];
-	}
-	if(empty($_POST['ragdoll2e'])){
-		$ragdoll2e = $blank;
-	}else{
-		$ragdoll2e = $_POST['ragdoll2e'];
-	}
-	if(empty($_POST['ragdoll2f'])){
-		$ragdoll2f = $blank;
-	}else{
-		$ragdoll2f = $_POST['ragdoll2f'];
-	}
-	if (isset($_POST['ragdoll3'])) 
-	$ragdoll3 = Trim(stripslashes($_POST['ragdoll3']));
-
-
-	if(empty($_POST['bengal1'])){
-		$bengal1 = $blank;
-	}else{
-		$bengal1 = Trim(stripslashes($_POST['bengal1']));
-	}
-	if(empty($_POST['bengal2a'])){
-		$bengal2a = $blank;
-	}else{
-		$bengal2a = $_POST['bengal2a'];
-	}
-	if(empty($_POST['rbengal2b'])){
-		$bengal2b = $blank;
-	}else{
-		$bengal2b = $_POST['bengal2b'];
-	}
-	if(empty($_POST['bengal2c'])){
-		$bengal2c = $blank;
-	}else{
-		$bengal2c = $_POST['bengal2c'];
-	}
-	if(empty($_POST['bengal2d'])){
-		$bengal2d = $blank;
-	}else{
-		$bengal2d = $_POST['bengal2d'];
-	}
-	if(empty($_POST['bengal2e'])){
-		$bengal2e = $blank;
-	}else{
-		$bengal2e = $_POST['bengal2e'];
-	}
-	if(empty($_POST['bengal2f'])){
-		$bengal2f = $blank;
-	}else{
-		$bengal2f = $_POST['bengal2f'];
-	}
-	if (isset($_POST['bengal3'])) 
-	$bengal3 = Trim(stripslashes($_POST['bengal3']));
-	
-	if (isset($_POST['fname'])) { echo "fname";
-	$fname = mysqli_real_escape_string($connection, $fname);}
-	if (isset($_POST['lname'])) 
-	$lname = mysqli_real_escape_string($connection, $lname);
-	if (isset($_POST['email'])) 
+	$name = mysqli_real_escape_string($connection, $name);
 	$email = mysqli_real_escape_string($connection, $email);
-	if (isset($_POST['siamese1'])) 
-	$siamese1 = mysqli_real_escape_string($connection, $siamese1);
-	if (isset($_POST['maine1'])) 
-	$maine1 = mysqli_real_escape_string($connection, $maine1);
-	if (isset($_POST['american1'])) 
-	$american1 = mysqli_real_escape_string($connection, $american1);
-	if (isset($_POST['ragamuffin1'])) 
-	$ragamuffin1 = mysqli_real_escape_string($connection, $ragamuffin1);
-	if (isset($_POST['ragdoll1'])) 
-	$ragdoll1 = mysqli_real_escape_string($connection, $ragdoll1);
-	if (isset($_POST['bengal1'])) 
-	$bengal1 = mysqli_real_escape_string($connection, $bengal1);
-	if (isset($_POST['siamese3'])) 
-	$siamese3 = mysqli_real_escape_string($connection, $siamese3);
-	if (isset($_POST['maine3'])) 
-	$maine3 = mysqli_real_escape_string($connection, $maine3);
-	if (isset($_POST['american3'])) 
-	$american3 = mysqli_real_escape_string($connection, $american3);
-	if (isset($_POST['ragamuffin3'])) 
-	$ragamuffin3 = mysqli_real_escape_string($connection, $ragamuffin3);
-	if (isset($_POST['ragdoll3'])) 
-	$ragdoll3 = mysqli_real_escape_string($connection, $ragdoll3);
-	if (isset($_POST['bengal3'])) 
-	$bengal3 = mysqli_real_escape_string($connection, $bengal3);
-
+	$fam1 = mysqli_real_escape_string($connection, $fam1);
+	$fam2 = mysqli_real_escape_string($connection, $fam2);
+	$fam3 = mysqli_real_escape_string($connection, $fam3);
+	$why1 = mysqli_real_escape_string($connection, $why1);
+	$why2 = mysqli_real_escape_string($connection, $why2);
+	$why3 = mysqli_real_escape_string($connection, $why3);
+	
 	// SQL Insert query into the database: responses
 
-	$query = "INSERT INTO response09 (";
-	$query .=" fname, lname, email, 
-		siamese1, siamese2a, siamese2b, siamese2c, siamese2d, siamese2e, siamese2f, siamese3, 
-		maine1, maine2a, maine2b, maine2c, maine2d, maine2e, maine2f, maine3, 
-		american1, american2a, american2b, american2c, american2d, american2e, american2f, american3, 
-		ragamuffin1, ragamuffin2a, ragamuffin2b, ragamuffin2c, ragamuffin2d, ragamuffin2e, ragamuffin2f, ragamuffin3, 
-		ragdoll1, ragdoll2a, ragdoll2b, ragdoll2c, ragdoll2d, ragdoll2e, ragdoll2f, ragdoll3, 
-		bengal1, bengal2a, bengal2b, bengal2c, bengal2d, bengal2e, bengal2f, bengal3";
+	$query = "INSERT INTO responses (";
+	$query .=" name, email, fam1, do1a, do1b, do1c, do1d, why1, fam2, do2a, do2b, do2c, do2d, why2, fam3, do3a, do3b, do3c, do3d, why3";
 	$query .=") VALUES (";
-	$query .="'{$fname}','{$lname}', '{$email}', 
-	'{$siamese1}', '{$siamese2a}', '{$siamese2b}', '{$siamese2c}', '{$siamese2d}', '{$siamese2e}', '{$siamese2f}', '{$siamese3}', 
-	'{$maine1}', '{$maine2a}', '{$maine2b}', '{$maine2c}', '{$maine2d}', '{$maine2e}', '{$maine2f}', '{$maine3}', 
-	'{$american1}', '{$american2a}', '{$american2b}','{$american2c}','{$american2d}','{$american2e}','{$american2f}','{$american3}', 
-	'{$ragamuffin1}', '{$ragamuffin2a}', '{$ragamuffin2b}', '{$ragamuffin2c}', '{$ragamuffin2d}', '{$ragamuffin2e}', '{$ragamuffin2f}', '{$ragamuffin3}', 
-	'{$ragdoll1}', '{$ragdoll2a}', '{$ragdoll2b}', '{$ragdoll2c}', '{$ragdoll2d}', '{$ragdoll2e}', '{$ragdoll2f}', '{$ragdoll3}', 
-	'{$bengal1}', '{$bengal2a}', '{$bengal2b}', '{$bengal2c}', '{$bengal2d}', '{$bengal2e}', '{$bengal2f}', '{$bengal3}'";
+	$query .="'{$name}', '{$email}', '{$fam1}', '{$do1a}', '{$do1b}', '{$do1c}', '{$do1d}', '{$why1}', '{$fam2}', '{$do2a}', '{$do2b}', '{$do2c}', '{$do2d}', '{$why2}', '{$fam3}', '{$do3a}', '{$do3b}', '{$do3c}', '{$do3d}', '{$why3}'";
 	$query .=")";
 	
 	$result = mysqli_query($connection, $query);
@@ -314,9 +151,17 @@
 	
 <!DOCTYPE html>
 <html lang="en">
+		<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet"><!--header font-->
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"><!--body font-->
+    	<link rel="stylesheet" href="css/styles.css">
+    	<link rel="stylesheet" href="css/boxes.css">
+
+    <div class"boxlogin container login3">
 	<head>
 		<title>Confirmation Page</title>
 	</head>
+	
+	<div class="opaque">
 	<body>
 		<?php
 			if ($result) {
@@ -327,10 +172,12 @@
 			}
 		?>
 
-		<form method="post" action="index.html">
+		<form method="post" action="survey.html">
 			<input type="submit" value="Back to Survey">
 		</form>
 	</body>
+</div>
+</div>
 </html>
 
 <?php
