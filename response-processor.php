@@ -156,17 +156,20 @@
     	<link rel="stylesheet" href="css/styles.css">
     	<link rel="stylesheet" href="css/boxes.css">
 
-    <div class"boxlogin container login3">
+    <div class="boxlogin container login3">	
+	
+	<div class="spacing">
+
+	<div class="opaque3">
+
 	<head>
 		<title>Confirmation Page</title>
 	</head>
-	
-	<div class="opaque">
 	<body>
 		<?php
 			if ($result) {
 				echo "<h1>Thank you!</h1>
-				Your response has been recorded.";
+				<p>Your response has been recorded.</p>";
 			} else {
 				die("Database query failed: ".mysqli_error($connection));
 			}
@@ -176,6 +179,7 @@
 			<input type="submit" value="Back to Survey">
 		</form>
 	</body>
+</div>
 </div>
 </div>
 </html>
