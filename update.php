@@ -28,6 +28,7 @@
 
 	$result = mysqli_query($connection, $query);
 	
+	$checked = "checked";
 
 ?>
 
@@ -82,18 +83,15 @@
 					<div>
 						<span>Are you familiar with this breed?</span><br>
 
-						<input type="radio" name="american1" checked= "checked" value=
-						<?php echo $responses["american1"] ?>>Yes<br>
-						<input type="radio" name="american1" checked="checked"> value=
-						<?php echo ($type == 'N') ? 'checked' : ''; ?>>No <br>
-						<input type="radio" name="american1" checked="checked" value=
-						<?php echo ($type == 'U') ? 'checked' : ''; ?> required> Unsure
+						<input type="radio" name="american1" value="Yes">Yes<br>
+						<input type="radio" name="american1" value="No">No <br>
+						<input type="radio" name="american1" value="Unsure" required> Unsure
 					</div>
 
 					<div>
 						<span>What would you do with this cat (select all that apply)</span><br>
 
-						<input type="checkbox" name="american2a" id="american2a" value="Snuggle">Snuggle it<br>
+						<input type="checkbox" name="american2a" id="american2a" value="Snuggle" <?php echo ($responses['american2a'] != "" ? "checked" : ""); ?>>Snuggle it<br>
 						<input type="checkbox" name="american2b" id="american2b" value="Pet">Pet It<br>
 						<input type="checkbox" name="american2c" id="american2c" value="Kick">Kick It<br>
 						<input type="checkbox" name="american2d" id="ameircan2d" value="Let Kill">Let it Kill Things<br>
@@ -130,6 +128,7 @@
 
 					<div>
 						<span>What would you do with this cat (select all that apply)</span><br>
+
 
 						<input type="checkbox" name="bengal2a" id="bengal2a" value="Snuggle">Snuggle it<br>
 						<input type="checkbox" name="bengal2b" id="bengal2b" value="Pet">Pet It<br>
