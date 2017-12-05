@@ -52,10 +52,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 // Check if username exists, if yes then verify password
                 if(mysqli_stmt_num_rows($stmt) == 1){                    
                     // Bind result variables
-                    mysqli_stmt_bind_result($stmt, $username, $hashed_password, $hashed_admincode);
+                    mysqli_stmt_bind_result($stmt, $username, $hashed_password);
+
                     if(mysqli_stmt_fetch($stmt)){
-                        if (password_verify($admincode, $hashed_admincode)) {
-                        
+                        if ($admincode == 1234) {
+
                             if(password_verify($password, $hashed_password)){
                                 /* Password is correct, so start a new session and
                                 save the username to the session */
@@ -67,8 +68,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                                 $password_err = 'The password you entered was not valid.';
                             }
                         }else{
-                             // Display an error message if password is not valid
-                                $admincode_err = 'The password you entered was not valid.';
+                             // Display an error message if admincode is not valid
+                                $admincode_err = 'The admin code you entered was not valid.';
                         }
                     }
                 } else{
@@ -111,7 +112,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
             <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
                 <label>Username:<sup>*</sup></label>
-                <input type="text" name="username"class="form-control" value="<?php echo $username; ?>">
+                <input type="text" name="username" class="form-control" value="<?php echo $username; ?>">
                 <span class="help-block"><?php echo $username_err; ?></span>
             </div>
 
@@ -121,7 +122,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <span class="help-block"><?php echo $password_err; ?></span>
             </div>
 
-            <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
+            <div class="form-group <?php echo (!empty($admincode_err)) ? 'has-error' : ''; ?>">
                 <label>Admin Code:<sup>*</sup></label>
                 <input type="password" name="admincode">
                 <span><?php echo $admincode_err; ?></span>
