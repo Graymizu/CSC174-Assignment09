@@ -97,12 +97,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/boxes.css">
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet"><!--header font-->
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"><!--body font-->
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body>
 
-    <div class=" boxlogin container">
+    <div class=" boxlogin container login1">
   
     <div class="opaque2">
         <h2>Login</h2>
