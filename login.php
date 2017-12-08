@@ -3,7 +3,7 @@
 require_once 'config.php';
  
 // Define variables and initialize with empty values
-$username = $password = "";
+$username = $password = $admincode ="";
 $username_err = $password_err = $admincode_err = "";
  
 // Processing form data when form is submitted
@@ -11,7 +11,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
  
     // Check if username is empty
     if(empty(trim($_POST["username"]))){
-        $username_err = 'Please enter username.';
+        $username_err = 'Please enter your username.';
     } else{
         $username = trim($_POST["username"]);
     }
@@ -25,7 +25,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     }
 
     // Check if admincode is empty
-    if(empty(trim($_POST['admincode']))){
+    if(empty(trim($_POST['admincode']))) {
         $admincode_err = 'Please enter the Admin Code.';
     } else{
         $admincode = trim($_POST['admincode']);
@@ -33,9 +33,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     }
     
     // Validate credentials
-    if(empty($username_err) && empty($password_err)){
+    if(!empty($username) && empty($username_err) && empty($password_err) && empty($admincode_err)){
         // Prepare a select statement
-        $sql = "SELECT username, password FROM users WHERE username = ?";
+        $sql = "SELECT username, password, admincode FROM users WHERE username = ?";
         
         if($stmt = mysqli_prepare($link, $sql)){
             // Bind variables to the prepared statement as parameters
@@ -43,7 +43,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             
             // Set parameters
             $param_username = $username;
-            
+       
             // Attempt to execute the prepared statement
             if(mysqli_stmt_execute($stmt)){
                 // Store result
@@ -52,10 +52,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 // Check if username exists, if yes then verify password
                 if(mysqli_stmt_num_rows($stmt) == 1){                    
                     // Bind result variables
-                    mysqli_stmt_bind_result($stmt, $username, $hashed_password);
+                    mysqli_stmt_bind_result($stmt, $username, $hashed_password, $usercode);
                     if(mysqli_stmt_fetch($stmt)){
-                        if (!password_verify($admincode, $hashed_admincode)) {
-                        
+
+                        // checking the admin code
+                        if ($admincode == $usercode) {
+                            /*Admin code is correct, so check the password */
+        
                             if(password_verify($password, $hashed_password)){
                                 /* Password is correct, so start a new session and
                                 save the username to the session */
@@ -67,8 +70,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                                 $password_err = 'The password you entered was not valid.';
                             }
                         }else{
-                             // Display an error message if password is not valid
-                                $admincode_err = 'The password you entered was not valid.';
+                             // Display an error message if admin code  is not valid
+                                $admincode_err = 'The code you entered was not valid. (Try: 1234)';
                         }
                     }
                 } else{
@@ -104,6 +107,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     <div class=" boxlogin container login1">
     <div class="opaque2">
+ 
         <h2>Login</h2>
         <p>Please fill in your credentials to login.</p>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
@@ -122,8 +126,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
             <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
                 <label>Admin Code:<sup>*</sup></label>
-                <input type="password" name="admincode">
-                <span><?php echo $admincode_err; ?></span>
+                <input type="password" name="admincode" class="form-control">
+                <span class="help-block"><?php echo $admincode_err; ?></span>
             </div>
 
             <div>
