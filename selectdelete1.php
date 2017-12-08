@@ -49,6 +49,7 @@
 				<td> ID# </td>
 				<td> First Name </td>
 				<td> Last Name </td>
+				<td> Email </td>
 				<td>Amrican Shorthair</td>
 				<td>Bengal</td>
 				<td>Maine Coon</td>
@@ -66,6 +67,7 @@
 				<td><?php echo $row["id"]; ?></td>
 				<td><?php echo $row["fname"]; ?></td>
 				<td><?php echo $row["lname"]; ?></td>
+				<td><?php echo $row["email"]; ?></td>
 				<td><?php echo $row["american1"]; ?></td>
 				<td><?php echo $row["bengal1"]; ?></td>
 				<td><?php echo $row["maine1"]; ?></td>
