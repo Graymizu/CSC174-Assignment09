@@ -4,10 +4,11 @@ require_once 'config.php';
  
 // Define variables and initialize with empty values
 $username = $password = $confirm_password = $email = $admincode = $newcode = "";
-$username_err = $password_err = $confirm_password_err = $email_err = $admincode_err = $newcode_err= "";
+$username_err = $password_err = $confirm_password_err = $email_err = $admincode_err = $newcode_err = "";
 $subject = "CSC174 Assignment09 Bronx Cat Survey";
 $message = "";
-$emailFrom = "mizukage64@gmail.com";
+$headers = 'From: <mizukage64@gmail.com>' . "\r\n";
+$headers .= 'Cc: mizukage64@gmail.com' . "\r\n";
  
 // Processing form data when form is submitted
 if($_SERVER["REQUEST_METHOD"] == "POST"){
@@ -114,7 +115,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             // Attempt to execute the prepared statement
             if(mysqli_stmt_execute($stmt)){
                 // Sending email that contains admin code information
-                mail($email, $subject, $message, "From: <$emailFrom");
+                mail($email, $subject, $message, $headers);
                 // Redirect to login page
                 session_start();
                 $_SESSION['username'] = $username;      
@@ -147,7 +148,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             // Attempt to execute the prepared statement
             if(mysqli_stmt_execute($stmt)){
                 // Sending email that contains admin code information
-                mail($email, $subject, $message, "From: <$emailFrom");
+                mail($email, $subject, $message, $headers);
                 // Redirect to login page
                 session_start();
                 $_SESSION['username'] = $username;      
