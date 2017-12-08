@@ -37,7 +37,7 @@
 		<?php include "admin-nav.inc" ?>	
 
 		
-		<h1>Hi, <?php echo $_SESSION['username']; ?>. Happy Editing.</h1>
+		<h1>Hi, <?php echo $_SESSION['username']; ?>. Happy Editing!</h1>
 		<h1>View Responses</h1>
 
 
