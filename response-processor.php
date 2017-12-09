@@ -324,7 +324,7 @@
 			}
 		?>
 
-		<form method="post" action="survey.html">
+		<form method="post" action="index.html">
 			<input type="submit" value="Back to Survey">
 		</form>
 	</body>
