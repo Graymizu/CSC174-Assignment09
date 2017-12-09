@@ -246,8 +246,8 @@
 	if (isset($_POST['bengal3'])) 
 	$bengal3 = Trim(stripslashes($_POST['bengal3']));
 	
-	if (isset($_POST['fname'])) { echo "fname";
-	$fname = mysqli_real_escape_string($connection, $fname);}
+	if (isset($_POST['fname'])) 
+	$fname = mysqli_real_escape_string($connection, $fname);
 	if (isset($_POST['lname'])) 
 	$lname = mysqli_real_escape_string($connection, $lname);
 	if (isset($_POST['email'])) 
@@ -300,6 +300,7 @@
 	
 <!DOCTYPE html>
 <html lang="en">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet"><!--header font-->
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"><!--body font-->
     	<link rel="stylesheet" href="css/styles.css">

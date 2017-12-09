@@ -32,86 +32,160 @@
 
 	<head>
 		<title>View Responses</title>
-	</head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+		<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet"><!--header font-->
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"><!--body font-->
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+    	<link rel="stylesheet" href="css/styles.css">
+    	<link rel="stylesheet" href="css/boxe.css">
+   
+
 	<body>
 		<?php include "admin-nav.inc" ?>	
 
-		
-		<h1>Hi, <?php echo $_SESSION['username']; ?>. Happy Editing!</h1>
-		<h1>View Responses</h1>
+		<div class="container-fluid">
+			<h1 class="center">Hi <?php echo $_SESSION['username']; ?>, Happy Editing!</h1>
+			<br>
 
+			<div class="container">
+				<h1>View Responses</h1>
 
-		<table border>
-		
-		<!-- Table headers -->
-		<tr>
-			<th>ID</th>
-			<th>First Name</th>
-			<th>Last Name</th>
-			<th>Email</th>
-		
-			<th>American1</th>
-			<th>American2</th>
-			<th>American3</th>
-			<th>Bengal1</th>
-			<th>Bengal2</th>
-			<th>Bengal3</th>
-			<th>Maine1</th>
-			<th>Maine2</th>
-			<th>Maine3</th>
-			<th>Ragamuffin1</th>
-			<th>Ragamuffin2</th>
-			<th>Ragamuffin3</th>
-			<th>Ragdoll1</th>
-			<th>Ragdoll2</th>
-			<th>Ragdoll3</th>
-			<th>Siamese1</th>
-			<th>Siamese2</th>
-			<th>Siamese3</th>
-
-		</tr>
-
-	<?php
-		// 3. Use returned data (if any)
-		while($responses = mysqli_fetch_assoc($result)) {
-			// output data from each row
-	?>
-
-			<tr>
-				<td><?php echo $responses["id"]; ?></td>
-				<td><?php echo $responses["fname"]; ?></td>
-				<td><?php echo $responses["lname"]; ?></td>
-				<td><?php echo $responses["email"]; ?></td>
-
-				<td><?php echo $responses["american1"] ?></td>
-				<td><?php echo $responses["american2a"]." ".$responses["american2b"]." ".$responses["american2c"]." ".$responses["american2d"]." ".$responses["american2e"]." ".$responses["american2f"]; ?></td>
-				<td><?php echo $responses["american3"]; ?></td>
-
-				<td><?php echo $responses["bengal1"] ?></td>
-				<td><?php echo $responses["bengal2a"]." ".$responses["bengal2b"]." ".$responses["bengal2c"]." ".$responses["bengal2d"]." ".$responses["bengal2e"]." ".$responses["bengal2f"]; ?></td>
-				<td><?php echo $responses["bengal3"]; ?></td>
-
-				<td><?php echo $responses["maine1"] ?></td>
-				<td><?php echo $responses["maine2a"]." ".$responses["maine2b"]." ".$responses["maine2c"]." ".$responses["maine2d"]." ".$responses["maine2e"]." ".$responses["maine2f"]; ?></td>
-				<td><?php echo $responses["maine3"]; ?></td>
-
-				<td><?php echo $responses["ragamuffin1"] ?></td>
-				<td><?php echo $responses["ragamuffin2a"]." ".$responses["ragamuffin2b"]." ".$responses["ragamuffin2c"]." ".$responses["ragamuffin2d"]." ".$responses["ragamuffin2e"]." ".$responses["ragamuffin2f"]; ?></td>
-				<td><?php echo $responses["ragamuffin3"]; ?></td>
-
-				<td><?php echo $responses["ragdoll1"] ?></td>
-				<td><?php echo $responses["ragdoll2a"]." ".$responses["ragdoll2b"]." ".$responses["ragdoll2c"]." ".$responses["ragdoll2d"]." ".$responses["ragdoll2e"]." ".$responses["ragdoll2f"]; ?></td>
-				<td><?php echo $responses["ragdoll3"]; ?></td>				
+				<div class="opaque">
+				<table class="maint" border>
 				
-				<td><?php echo $responses["siamese1"] ?></td>
-				<td><?php echo $responses["siamese2a"]." ".$responses["siamese2b"]." ".$responses["siamese2c"]." ".$responses["siamese2d"]." ".$responses["siamese2e"]." ".$responses["siamese2f"]; ?></td>
-				<td><?php echo $responses["siamese3"]; ?></td>
+				<!-- Table headers 
+				<tr>
+					<th>ID</th>
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th>Email</th>
 				
-			</tr>
+					<th>American1</th>
+					<th>American2</th>
+					<th>American3</th>
 
-	<?php } ?>
+					<th>Bengal1</th>
+					<th>Bengal2</th>
+					<th>Bengal3</th>
 
-		</table>
+					<th>Maine1</th>
+					<th>Maine2</th>
+					<th>Maine3</th>
+
+					<th>Ragamuffin1</th>
+					<th>Ragamuffin2</th>
+					<th>Ragamuffin3</th>
+
+					<th>Ragdoll1</th>
+					<th>Ragdoll2</th>
+					<th>Ragdoll3</th>
+
+					<th>Siamese1</th>
+					<th>Siamese2</th>
+					<th>Siamese3</th>
+
+				</tr>
+-->
+			<?php
+				// 3. Use returned data (if any)
+				while($responses = mysqli_fetch_assoc($result)) {
+					// output data from each row
+			?>
+
+					<tr>
+						<th><ins><em>ID</em></ins></th>
+						<th><ins><em>Name</em></ins></th>
+						<th><ins><em>Email</em></ins></th>
+					</tr>
+						
+					<tr>
+						<td><?php echo $responses["id"]; ?></td>
+						<td><?php echo $responses["fname"]." ".$responses["lname"]; ?></td>
+						<td><?php echo $responses["email"]; ?></td>
+					</tr>
+
+					<tr>
+						<th>American1</th>
+						<th>American2</th>
+						<th>American3</th>						
+					</tr>
+
+					<tr>
+						<td><?php echo $responses["american1"] ?></td>
+						<td><?php echo $responses["american2a"]." ".$responses["american2b"]." ".$responses["american2c"]." ".$responses["american2d"]." ".$responses["american2e"]." ".$responses["american2f"]; ?></td>
+						<td><?php echo $responses["american3"]; ?></td>
+					</tr>
+
+					<tr>
+						<th>Bengal1</th>
+						<th>Bengal2</th>
+						<th>Bengal3</th>						
+					</tr>
+
+					<tr>
+						<td><?php echo $responses["bengal1"] ?></td>
+						<td><?php echo $responses["bengal2a"]." ".$responses["bengal2b"]." ".$responses["bengal2c"]." ".$responses["bengal2d"]." ".$responses["bengal2e"]." ".$responses["bengal2f"]; ?></td>
+						<td><?php echo $responses["bengal3"]; ?></td>
+					</tr>
+
+					<tr>
+						<th>Maine1</th>
+						<th>Maine2</th>
+						<th>Maine3</th>						
+					</tr>
+					
+					<tr>
+						<td><?php echo $responses["maine1"] ?></td>
+						<td><?php echo $responses["maine2a"]." ".$responses["maine2b"]." ".$responses["maine2c"]." ".$responses["maine2d"]." ".$responses["maine2e"]." ".$responses["maine2f"]; ?></td>
+						<td><?php echo $responses["maine3"]; ?></td>
+					</tr>
+
+					<tr>
+						<th>Ragamuffin1</th>
+						<th>Ragamuffin2</th>
+						<th>Ragamuffin3</th>						
+					</tr>
+					
+					<tr>
+						<td><?php echo $responses["ragamuffin1"] ?></td>
+						<td><?php echo $responses["ragamuffin2a"]." ".$responses["ragamuffin2b"]." ".$responses["ragamuffin2c"]." ".$responses["ragamuffin2d"]." ".$responses["ragamuffin2e"]." ".$responses["ragamuffin2f"]; ?></td>
+						<td><?php echo $responses["ragamuffin3"]; ?></td>
+					</tr>
+
+					<tr>
+						<th>Ragdoll1</th>
+						<th>Ragdoll2</th>
+						<th>Ragdoll3</th>
+					</tr>
+					
+					<tr>
+						<td><?php echo $responses["ragdoll1"] ?></td>
+						<td><?php echo $responses["ragdoll2a"]." ".$responses["ragdoll2b"]." ".$responses["ragdoll2c"]." ".$responses["ragdoll2d"]." ".$responses["ragdoll2e"]." ".$responses["ragdoll2f"]; ?></td>
+						<td><?php echo $responses["ragdoll3"]; ?></td>				
+					</tr>
+
+					<tr>
+						<th>Siamese1</th>
+						<th>Siamese2</th>
+						<th>Siamese3</th>
+					</tr>
+					
+					<tr>						
+						<td><?php echo $responses["siamese1"] ?></td>
+						<td><?php echo $responses["siamese2a"]." ".$responses["siamese2b"]." ".$responses["siamese2c"]." ".$responses["siamese2d"]." ".$responses["siamese2e"]." ".$responses["siamese2f"]; ?></td>
+						<td><?php echo $responses["siamese3"]; ?></td>
+					</tr>
+
+					<tr><td></td></tr>
+
+					<tr><td></td></tr>
+		
+			<?php } ?>
+
+				</table>
+			</div>
+		</div>
+		</div>	
 	</body>
 </html>
 

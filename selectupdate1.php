@@ -30,55 +30,63 @@
 <html lang="en">
 	<head>
 		<title>Delete</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+		<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet"><!--header font-->
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"><!--body font-->
+   	 	<link rel="stylesheet" href="css/grid.css">
+    	<link rel="stylesheet" href="css/styles.css">
 	</head>
 
 	<body>
 		
 		<?php include "admin-nav.inc" ?>
 
-		<h1>Update a Response</h1>
+		<div class="container">
 
-		<form method="post" id="form" action="update.php">
-			<span>Please enter the ID of the response you would like to update.</span>
-			<br>
-			<input type="number" name="id" id="id" >
-			<input type="submit" id="update" value="Find Response">
-		</form>
+			<h1>Update a Response</h1>
 
-		<table border>
-			<tr>
-				<td> ID# </td>
-				<td> First Name </td>
-				<td> Last Name </td>
-				<td> Email </td>
-				<td>Amrican Shorthair</td>
-				<td>Bengal</td>
-				<td>Maine Coon</td>
-				<td>Ragamuffin</td>
-				<td>Ragdoll</td>
-				<td>Siamese</td>
-			</tr>
+			<form method="post" id="form" action="update.php">
+				<span>Please enter the ID of the response you would like to update.</span>
+				<br>
+				<input type="number" name="id" id="id" >
+				<input type="submit" id="update" value="Find Response">
+			</form>
 
-<?php
-	// 3. Use returned data (if any)
-	while($row = mysqli_fetch_assoc($result)) {
-		// output data from each row
-?>
-			<tr>
-				<td><?php echo $row["id"]; ?></td>
-				<td><?php echo $row["fname"]; ?></td>
-				<td><?php echo $row["lname"]; ?></td>
-				<td><?php echo $row["email"]; ?></td>
-				<td><?php echo $row["american1"]; ?></td>
-				<td><?php echo $row["bengal1"]; ?></td>
-				<td><?php echo $row["maine1"]; ?></td>
-				<td><?php echo $row["ragamuffin1"]; ?></td>
-				<td><?php echo $row["ragdoll1"]; ?></td>
-				<td><?php echo $row["siamese1"]; ?></td>
-			</tr>
-<?php } ?>	
-		</table>
+			<table border>
+				<tr>
+					<td> ID# </td>
+					<td> First Name </td>
+					<td> Last Name </td>
+					<td> Email </td>
+					<td>Amrican Shorthair</td>
+					<td>Bengal</td>
+					<td>Maine Coon</td>
+					<td>Ragamuffin</td>
+					<td>Ragdoll</td>
+					<td>Siamese</td>
+				</tr>
 
+	<?php
+		// 3. Use returned data (if any)
+		while($row = mysqli_fetch_assoc($result)) {
+			// output data from each row
+	?>
+				<tr>
+					<td><?php echo $row["id"]; ?></td>
+					<td><?php echo $row["fname"]; ?></td>
+					<td><?php echo $row["lname"]; ?></td>
+					<td><?php echo $row["email"]; ?></td>
+					<td><?php echo $row["american1"]; ?></td>
+					<td><?php echo $row["bengal1"]; ?></td>
+					<td><?php echo $row["maine1"]; ?></td>
+					<td><?php echo $row["ragamuffin1"]; ?></td>
+					<td><?php echo $row["ragdoll1"]; ?></td>
+					<td><?php echo $row["siamese1"]; ?></td>
+				</tr>
+	<?php } ?>	
+			</table>
+		</div>
 	</body>
 </html>
 

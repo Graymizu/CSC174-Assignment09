@@ -36,8 +36,14 @@
 <html lang="en">
 	<head>
 		<title>View Responses</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+		<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet"><!--header font-->
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"><!--body font-->
+   	 	<link rel="stylesheet" href="css/grid.css">
+    	<link rel="stylesheet" href="css/styles.css">
 	</head>
-	<body>
+	<body class="container">
 		<?php include "admin-nav.inc" ?>
 
 		<h1>Updating Response ID <?php echo $id?></h1>
@@ -53,9 +59,6 @@
 			<form method="post" id="form" action="confirm-update.php">
 				<h2>Tell Us About Yourself</h2>
 				<section>
-					<span>ID: </span>
-					<input readonly type="text" name="id" id="id" value=
-					<?php echo $responses["id"]?>>
 					<span>First Name:</span>
 					<input type= "text" name="fname" id="fname" value=
 					<?php echo $responses["fname"]?>>
@@ -101,7 +104,7 @@
 
 					<div>
 						<span>Tell us why you selected the answers above:</span><br>
-						<textarea name="american3" id="american3" value= <?php echo $responses["american3"]?>></textarea>
+						<textarea name="american3" id="american3"><?php echo $responses['american3']?></textarea>
 					</div>
 				</section>
 
@@ -140,7 +143,7 @@
 
 					<div>
 						<span>Tell us why you selected the answers above:</span><br>
-						<textarea name="bengal3" id="bengal3" value= <?php echo $responses["bengal3"]?>></textarea>
+						<textarea name="bengal3" id="bengal3"><?php echo $responses["bengal3"]?></textarea>
 					</div>
 
 				</section>
@@ -180,7 +183,7 @@
 
 					<div>
 						<span>Tell us why you selected the answers above:</span><br>
-						<textarea name="maine3" id="maine3" value= <?php echo $responses["maine3"]?>></textarea>
+						<textarea name="maine3" id="maine3"><?php echo $responses["maine3"]?></textarea>
 					</div>
 
 				</section>
@@ -219,7 +222,7 @@
 
 					<div>
 						<span>Tell us why you selected the answers above:</span><br>
-						<textarea name="ragamuffin3" id="ragamuffin3" value= <?php echo $responses["ragamuffin3"]?>></textarea>
+						<textarea name="ragamuffin3" id="ragamuffin3"><?php echo $responses["ragamuffin3"]?></textarea>
 					</div>
 
 				</section> <!--end cat 4 -->
@@ -257,7 +260,7 @@
 
 					<div>
 						<span>Tell us why you selected the answers above:</span><br>
-						<textarea name="ragdoll3" id="ragdoll3" value= <?php echo $responses["ragdoll3"]?>></textarea>
+						<textarea name="ragdoll3" id="ragdoll3"><?php echo $responses["ragdoll3"]?></textarea>
 					</div>
 
 				</section> <!--end cat 5 -->
@@ -295,7 +298,7 @@
 
 					<div>
 						<span>Tell us why you selected the answers above:</span><br>
-						<textarea name="siamese3" id="siamese3" value= <?php echo $responses["siamese3"]?>></textarea>
+						<textarea name="siamese3" id="siamese3"><?php echo $responses["siamese3"]?></textarea>
 					</div>
 						
 				</section>
@@ -304,7 +307,7 @@
 
 <!-- End of Survey Questions =========================================================================-->
 
-				<input type="submit" value="Submit Update">
+				<button type="submit" name="id" id="id" value="<?php echo $responses["id"]?>"> Update Survey Response for Account # <?php echo $id ?> </button>
 
 			</form>
 
