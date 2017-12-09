@@ -109,7 +109,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             $param_admincode = $admincode;
             $param_newcode = $newcode;
             $param_email = $email;
-            $message = "Hello ".$username.",\n\n    Thank you for signing up to be a new administrater on our website. \nYou admin code that you will need to login will be ".$newcode.".\n\nHappy Editing!\n\nThe Bronx";
+            $message = "Hello ".$username.",\n\nThank you for signing up to be a new administrater on our website. \nYou admin code that you will need to login will be <strong>".$newcode."</strong>.\n\nHappy Editing!\n\nThe Bronx Team";
 
             
             // Attempt to execute the prepared statement
@@ -143,7 +143,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             $param_password = password_hash($password, PASSWORD_DEFAULT); // Creates a password hash
             $param_admincode = $admincode;
             $param_email = $email;
-            $message = "Hello ".$username.",\n\n    Thank you for signing up to be a new administrater on our website. \nYou admin code that you will need to login will be ".$admincode.".\n\nHappy Editing!\n\nThe Bronx";
+            $message = "Hello ".$username.",\n\nThank you for signing up to be a new administrater on our website. \nYou admin code that you will need to login will be <strong>".$admincode."</strong>.\n\nHappy Editing!\n\nThe Bronx Team";
             
             // Attempt to execute the prepared statement
             if(mysqli_stmt_execute($stmt)){
