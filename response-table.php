@@ -48,9 +48,11 @@
 			<br>
 
 			<div class="container">
-				<h1>View Responses</h1>
+				
 
 				<div class="opaque">
+
+				<h1>View Responses</h1>	
 				<table class="maint" border>
 				
 				<!-- Table headers 
@@ -91,18 +93,22 @@
 				while($responses = mysqli_fetch_assoc($result)) {
 					// output data from each row
 			?>
+					<tbody class="head">
+						<tr>
+							<th><ins><em>ID</em></ins></th>
+							<th><ins><em>Name</em></ins></th>
+							<th><ins><em>Email</em></ins></th>
+						</tr>
+					</tbody>
 
-					<tr>
-						<th><ins><em>ID</em></ins></th>
-						<th><ins><em>Name</em></ins></th>
-						<th><ins><em>Email</em></ins></th>
-					</tr>
-						
-					<tr>
-						<td><?php echo $responses["id"]; ?></td>
-						<td><?php echo $responses["fname"]." ".$responses["lname"]; ?></td>
-						<td><?php echo $responses["email"]; ?></td>
-					</tr>
+
+					<tbody class="hi2">
+						<tr>
+							<td><?php echo $responses["id"]; ?></td>
+							<td><?php echo $responses["fname"]." ".$responses["lname"]; ?></td>
+							<td><?php echo $responses["email"]; ?></td>
+						</tr>
+					</tbody>	
 
 					<tr>
 						<th>American1</th>
@@ -110,11 +116,13 @@
 						<th>American3</th>						
 					</tr>
 
-					<tr>
-						<td><?php echo $responses["american1"] ?></td>
-						<td><?php echo $responses["american2a"]." ".$responses["american2b"]." ".$responses["american2c"]." ".$responses["american2d"]." ".$responses["american2e"]." ".$responses["american2f"]; ?></td>
-						<td><?php echo $responses["american3"]; ?></td>
-					</tr>
+					<tbody class="hi">
+						<tr>
+							<td><?php echo $responses["american1"] ?></td>
+							<td><?php echo $responses["american2a"]." ".$responses["american2b"]." ".$responses["american2c"]." ".$responses["american2d"]." ".$responses["american2e"]." ".$responses["american2f"]; ?></td>
+							<td><?php echo $responses["american3"]; ?></td>
+						</tr>
+					</tbody>
 
 					<tr>
 						<th>Bengal1</th>
@@ -122,11 +130,13 @@
 						<th>Bengal3</th>						
 					</tr>
 
-					<tr>
-						<td><?php echo $responses["bengal1"] ?></td>
-						<td><?php echo $responses["bengal2a"]." ".$responses["bengal2b"]." ".$responses["bengal2c"]." ".$responses["bengal2d"]." ".$responses["bengal2e"]." ".$responses["bengal2f"]; ?></td>
-						<td><?php echo $responses["bengal3"]; ?></td>
-					</tr>
+					<tbody class="hi">
+						<tr>
+							<td><?php echo $responses["bengal1"] ?></td>
+							<td><?php echo $responses["bengal2a"]." ".$responses["bengal2b"]." ".$responses["bengal2c"]." ".$responses["bengal2d"]." ".$responses["bengal2e"]." ".$responses["bengal2f"]; ?></td>
+							<td><?php echo $responses["bengal3"]; ?></td>
+						</tr>
+					</tbody>	
 
 					<tr>
 						<th>Maine1</th>
@@ -134,11 +144,13 @@
 						<th>Maine3</th>						
 					</tr>
 					
-					<tr>
-						<td><?php echo $responses["maine1"] ?></td>
-						<td><?php echo $responses["maine2a"]." ".$responses["maine2b"]." ".$responses["maine2c"]." ".$responses["maine2d"]." ".$responses["maine2e"]." ".$responses["maine2f"]; ?></td>
-						<td><?php echo $responses["maine3"]; ?></td>
-					</tr>
+					<tbody class="hi">					
+						<tr>
+							<td><?php echo $responses["maine1"] ?></td>
+							<td><?php echo $responses["maine2a"]." ".$responses["maine2b"]." ".$responses["maine2c"]." ".$responses["maine2d"]." ".$responses["maine2e"]." ".$responses["maine2f"]; ?></td>
+							<td><?php echo $responses["maine3"]; ?></td>
+						</tr>
+					</tbody>	
 
 					<tr>
 						<th>Ragamuffin1</th>
@@ -146,11 +158,13 @@
 						<th>Ragamuffin3</th>						
 					</tr>
 					
-					<tr>
-						<td><?php echo $responses["ragamuffin1"] ?></td>
-						<td><?php echo $responses["ragamuffin2a"]." ".$responses["ragamuffin2b"]." ".$responses["ragamuffin2c"]." ".$responses["ragamuffin2d"]." ".$responses["ragamuffin2e"]." ".$responses["ragamuffin2f"]; ?></td>
-						<td><?php echo $responses["ragamuffin3"]; ?></td>
-					</tr>
+					<tbody class="hi">					
+						<tr>
+							<td><?php echo $responses["ragamuffin1"] ?></td>
+							<td><?php echo $responses["ragamuffin2a"]." ".$responses["ragamuffin2b"]." ".$responses["ragamuffin2c"]." ".$responses["ragamuffin2d"]." ".$responses["ragamuffin2e"]." ".$responses["ragamuffin2f"]; ?></td>
+							<td><?php echo $responses["ragamuffin3"]; ?></td>
+						</tr>
+					</tbody>	
 
 					<tr>
 						<th>Ragdoll1</th>
@@ -158,11 +172,13 @@
 						<th>Ragdoll3</th>
 					</tr>
 					
-					<tr>
-						<td><?php echo $responses["ragdoll1"] ?></td>
-						<td><?php echo $responses["ragdoll2a"]." ".$responses["ragdoll2b"]." ".$responses["ragdoll2c"]." ".$responses["ragdoll2d"]." ".$responses["ragdoll2e"]." ".$responses["ragdoll2f"]; ?></td>
-						<td><?php echo $responses["ragdoll3"]; ?></td>				
-					</tr>
+					<tbody class="hi">					
+						<tr>
+							<td><?php echo $responses["ragdoll1"] ?></td>
+							<td><?php echo $responses["ragdoll2a"]." ".$responses["ragdoll2b"]." ".$responses["ragdoll2c"]." ".$responses["ragdoll2d"]." ".$responses["ragdoll2e"]." ".$responses["ragdoll2f"]; ?></td>
+							<td><?php echo $responses["ragdoll3"]; ?></td>				
+						</tr>
+					</tbody>	
 
 					<tr>
 						<th>Siamese1</th>
@@ -170,15 +186,21 @@
 						<th>Siamese3</th>
 					</tr>
 					
-					<tr>						
-						<td><?php echo $responses["siamese1"] ?></td>
-						<td><?php echo $responses["siamese2a"]." ".$responses["siamese2b"]." ".$responses["siamese2c"]." ".$responses["siamese2d"]." ".$responses["siamese2e"]." ".$responses["siamese2f"]; ?></td>
-						<td><?php echo $responses["siamese3"]; ?></td>
-					</tr>
+					<tbody class="hi">					
+						<tr>						
+							<td><?php echo $responses["siamese1"] ?></td>
+							<td><?php echo $responses["siamese2a"]." ".$responses["siamese2b"]." ".$responses["siamese2c"]." ".$responses["siamese2d"]." ".$responses["siamese2e"]." ".$responses["siamese2f"]; ?></td>
+							<td><?php echo $responses["siamese3"]; ?></td>
+						</tr>
+					</tbody>	
 
-					<tr><td></td></tr>
 
-					<tr><td></td></tr>
+					<tbody class="foot">
+							<tr><td colspan="3">&nbsp;</td></tr>
+					</tbody>
+					<tbody class="foot">
+							<tr><td colspan="3">&nbsp;</td></tr>
+					</tbody>
 		
 			<?php } ?>
 

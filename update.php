@@ -42,10 +42,11 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"><!--body font-->
    	 	<link rel="stylesheet" href="css/grid.css">
     	<link rel="stylesheet" href="css/styles.css">
+    	<link rel="stylesheet" href="css/boxe.css">
 	</head>
-	<body class="container">
+	<body>
 		<?php include "admin-nav.inc" ?>
-
+		<div class="container">
 		<h1>Updating Response ID <?php echo $id?></h1>
 
 		<?php
@@ -55,9 +56,8 @@
 				
 			
 		?>
-
+	<div class="opaque">
 			<form method="post" id="form" action="confirm-update.php">
-				<h2>Tell Us About Yourself</h2>
 				<section>
 					<span>First Name:</span>
 					<input type= "text" name="fname" id="fname" value=
@@ -313,8 +313,8 @@
 
 	<?php } ?>
 
-		</table>
-		
+	</div>	
+	</div>	
 	</body>
 </html>
 

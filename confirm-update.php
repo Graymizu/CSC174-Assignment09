@@ -368,10 +368,14 @@
     	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
     	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	</head>
-	<body class="container">
+   <body>
+
+     <?php include "admin-nav.inc" ?>
+
+     <div class="container-fluid">
+
 		<div class=" box1 container">
 
-			<?php include "admin-nav.inc" ?>
 
 			<div class="opaque">
 				<h1>Database Update - Response Table</h1>

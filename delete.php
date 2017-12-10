@@ -54,7 +54,7 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 
      <?php include "admin-nav.inc" ?>
 
-     <div class="container-fluid">
+     <div class="container">
  	 
  	 <div class=" box1 container">
 

@@ -1,5 +1,6 @@
 <div class="container-fluid">
 	<nav class="navbar navbar-inverse">
+
 		<ul  class="nav navbar-nav">
 			<li><a href="response-table.php">Home</a></li>
 			<li><a href="index.html">Survey</a></li>

@@ -70,5 +70,39 @@ li{
 }
 
 .maint tr th {
-	min-height: 50px;
+	width: 1000px;
 }
+
+tbody {
+	color: black;
+	background-color: #cecece;
+}
+
+tbody.hi {
+	color: black;
+	background-color: #ededed;
+	font-style: italic;
+}
+
+tbody.his {
+	color: black;
+	background-color: #ededed;
+}
+
+tbody.hi2 {
+	color: #e5e5e5;
+	background-color: #666666;
+}
+
+tbody.head {
+	color: white;
+	background-color: #494949;
+}
+
+tbody.foot{
+	color:black;
+	background-color: black;
+}
+
+
+

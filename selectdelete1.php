@@ -52,37 +52,51 @@
 			</form>
 
 			<table border>
-				<tr>
-					<td> ID# </td>
-					<td> First Name </td>
-					<td> Last Name </td>
-					<td> Email </td>
-					<td>Amrican Shorthair</td>
-					<td>Bengal</td>
-					<td>Maine Coon</td>
-					<td>Ragamuffin</td>
-					<td>Ragdoll</td>
-					<td>Siamese</td>
-				</tr>
+
+				<tbody class="foot">
+					<tr><td colspan="10">&nbsp;</td></tr>
+				</tbody>
+
+				<tbody class="hi2">
+					<tr>
+						<td> ID# </td>
+						<td> First Name </td>
+						<td> Last Name </td>
+						<td> Email </td>
+						<td>Amrican Shorthair</td>
+						<td>Bengal</td>
+						<td>Maine Coon</td>
+						<td>Ragamuffin</td>
+						<td>Ragdoll</td>
+						<td>Siamese</td>
+					</tr>
+				</tbody>
 
 	<?php
 		// 3. Use returned data (if any)
 		while($row = mysqli_fetch_assoc($result)) {
 			// output data from each row
 	?>
-				<tr>
-					<td><?php echo $row["id"]; ?></td>
-					<td><?php echo $row["fname"]; ?></td>
-					<td><?php echo $row["lname"]; ?></td>
-					<td><?php echo $row["email"]; ?></td>
-					<td><?php echo $row["american1"]; ?></td>
-					<td><?php echo $row["bengal1"]; ?></td>
-					<td><?php echo $row["maine1"]; ?></td>
-					<td><?php echo $row["ragamuffin1"]; ?></td>
-					<td><?php echo $row["ragdoll1"]; ?></td>
-					<td><?php echo $row["siamese1"]; ?></td>
-				</tr>
-	<?php } ?>	
+				<tbody class="his">
+					<tr>
+						<td><strong><?php echo $row["id"]; ?></strong></td>
+						<td><?php echo $row["fname"]; ?></td>
+						<td><?php echo $row["lname"]; ?></td>
+						<td><?php echo $row["email"]; ?></td>
+						<td><?php echo $row["american1"]; ?></td>
+						<td><?php echo $row["bengal1"]; ?></td>
+						<td><?php echo $row["maine1"]; ?></td>
+						<td><?php echo $row["ragamuffin1"]; ?></td>
+						<td><?php echo $row["ragdoll1"]; ?></td>
+						<td><?php echo $row["siamese1"]; ?></td>
+					</tr>
+				</tbody>	
+	<?php } ?>
+
+				<tbody class="foot">
+					<tr><td colspan="10">&nbsp;</td></tr>
+				</tbody>
+
 			</table>
 		</body>
 	</body>
