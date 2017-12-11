@@ -86,9 +86,9 @@
 					<div>
 						<span>Are you familiar with this breed?</span><br>
 
-						<input type="radio" name="american1" value="Yes" <?php echo ($responses['american1'] != "" ? "checked" : ""); ?>>Yes<br>
-						<input type="radio" name="american1" value="No"<?php echo ($responses['american1'] != "" ? "checked" : ""); ?>>No <br>
-						<input type="radio" name="american1" value="Unsure" <?php echo ($responses['american1'] != "" ? "checked" : ""); ?> required> Unsure
+						<input type="radio" name="american1" value="Yes" <?php echo ($responses['american1'] == "Yes" ? "checked" : ""); ?>>Yes<br>
+						<input type="radio" name="american1" value="No"<?php echo ($responses['american1'] == "No" ? "checked" : ""); ?>>No <br>
+						<input type="radio" name="american1" value="Unsure" <?php echo ($responses['american1'] == "Unsure" ? "checked" : ""); ?> required> Unsure
 					</div>
 
 					<div>
@@ -124,9 +124,9 @@
 					<div>
 						<span>Are you familiar with this breed?</span><br>
 
-						<input type="radio" name="bengal1" value="Yes" <?php echo ($responses['bengal1'] != "" ? "checked" : ""); ?>>Yes<br>
-						<input type="radio" name="bengal1" value="No" <?php echo ($responses['bengal1'] != "" ? "checked" : ""); ?>>No<br>
-						<input type="radio" name="bengal1" value="Unsure" <?php echo ($responses['bengal1'] != "" ? "checked" : ""); ?> required>Unsure
+						<input type="radio" name="bengal1" value="Yes" <?php echo ($responses['bengal1'] == "Yes" ? "checked" : ""); ?>>Yes<br>
+						<input type="radio" name="bengal1" value="No" <?php echo ($responses['bengal1'] == "No" ? "checked" : ""); ?>>No<br>
+						<input type="radio" name="bengal1" value="Unsure" <?php echo ($responses['bengal1'] == "Unsure" ? "checked" : ""); ?> required>Unsure
 					</div>
 
 					<div>
@@ -165,9 +165,9 @@
 					<div>
 						<span>Are you familiar with this breed?</span><br>
 
-						<input type="radio" name="maine1" value="Yes" <?php echo ($responses['maine1'] != "" ? "checked" : ""); ?>>Yes<br>
-						<input type="radio" name="maine1" value="No" <?php echo ($responses['maine1'] != "" ? "checked" : ""); ?>>No<br>
-						<input type="radio" name="maine1" value="Unsure" <?php echo ($responses['maine1'] != "" ? "checked" : ""); ?> required>Unsure
+						<input type="radio" name="maine1" value="Yes" <?php echo ($responses['maine1'] == "Yes" ? "checked" : ""); ?>>Yes<br>
+						<input type="radio" name="maine1" value="No" <?php echo ($responses['maine1'] == "No" ? "checked" : ""); ?>>No<br>
+						<input type="radio" name="maine1" value="Unsure" <?php echo ($responses['maine1'] == "Unsure" ? "checked" : ""); ?> required>Unsure
 					</div>
 
 					<div>
@@ -204,9 +204,9 @@
 					<div>
 						<span>Are you familiar with this breed?</span><br>
 
-						<input type="radio" name="ragamuffin1" value="Yes" <?php echo ($responses['ragamuffin1'] != "" ? "checked" : ""); ?>>Yes<br>
-						<input type="radio" name="ragamuffin1" value="No" <?php echo ($responses['ragamuffin1'] != "" ? "checked" : ""); ?>>No<br>
-						<input type="radio" name="ragamuffin1" value="Unsure" <?php echo ($responses['ragamuffin1'] != "" ? "checked" : ""); ?> required>Unsure
+						<input type="radio" name="ragamuffin1" value="Yes" <?php echo ($responses['ragamuffin1'] == "Yes" ? "checked" : ""); ?>>Yes<br>
+						<input type="radio" name="ragamuffin1" value="No" <?php echo ($responses['ragamuffin1'] == "No" ? "checked" : ""); ?>>No<br>
+						<input type="radio" name="ragamuffin1" value="Unsure" <?php echo ($responses['ragamuffin1'] == "Unsure" ? "checked" : ""); ?> required>Unsure
 					</div>
 
 					<div>
@@ -242,9 +242,9 @@
 					<div>
 						<span>Are you familiar with this breed?</span><br>
 
-						<input type="radio" name="ragdoll1" value="Yes" <?php echo ($responses['ragdoll1'] != "" ? "checked" : ""); ?>>Yes<br>
-						<input type="radio" name="ragdoll1" value="No" <?php echo ($responses['ragdoll1'] != "" ? "checked" : ""); ?>>No<br>
-						<input type="radio" name="ragdoll1" value="Unsure" <?php echo ($responses['ragdoll1'] != "" ? "checked" : ""); ?> required>Unsure
+						<input type="radio" name="ragdoll1" value="Yes" <?php echo ($responses['ragdoll1'] == "Yes" ? "checked" : ""); ?>>Yes<br>
+						<input type="radio" name="ragdoll1" value="No" <?php echo ($responses['ragdoll1'] == "No" ? "checked" : ""); ?>>No<br>
+						<input type="radio" name="ragdoll1" value="Unsure" <?php echo ($responses['ragdoll1'] == "Unsure" ? "checked" : ""); ?> required>Unsure
 					</div>
 
 					<div>
@@ -280,9 +280,9 @@
 					<div>
 						<span>Are you familiar with this breed?</span><br>
 
-						<input type="radio" name="siamese1" value="Yes" <?php echo ($responses['siamese1'] != "" ? "checked" : ""); ?>>Yes<br>
-						<input type="radio" name="siamese1" value="No" <?php echo ($responses['siamese1'] != "" ? "checked" : ""); ?>>No<br>
-						<input type="radio" name="siamese1" value="Unsure" <?php echo ($responses['siamese1'] != "" ? "checked" : ""); ?> required>Unsure
+						<input type="radio" name="siamese1" value="Yes" <?php echo ($responses['siamese1'] == "Yes" ? "checked" : ""); ?>>Yes<br>
+						<input type="radio" name="siamese1" value="No" <?php echo ($responses['siamese1'] == "No" ? "checked" : ""); ?>>No<br>
+						<input type="radio" name="siamese1" value="Unsure" <?php echo ($responses['siamese1'] == "Unsure" ? "checked" : ""); ?> required>Unsure
 					</div>
 
 					<div>

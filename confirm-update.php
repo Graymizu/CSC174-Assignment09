@@ -23,11 +23,8 @@
 	$id = (int) $_POST ['id'];
 	
 	//Get values and escape strings
-	if (isset($_POST['fname'])) 
 	$fname = trim(stripslashes($_POST['fname']));
-	if (isset($_POST['lname'])) 
 	$lname = trim(stripslashes($_POST['lname']));
-	if (isset($_POST['email'])) 
 	$email = trim(stripslashes($_POST['email']));
 	//error fix for radio buttons and checkboxes
 	$blank = "";
@@ -66,7 +63,6 @@
 	}else{
 		$siamese2f = $_POST['siamese2f']; 
 	}
-	if (isset($_POST['siamese3'])) 
 	$siamese3 = Trim(stripslashes($_POST['siamese3']));
 	
 	if(empty($_POST['maine1'])){
@@ -104,7 +100,6 @@
 	}else{
 		$maine2f = $_POST['maine2f'];
 	}
-	if (isset($_POST['maine3'])) 
 	$maine3 = Trim(stripslashes($_POST['maine3']));
 	
 	if(empty($_POST['american1'])){
@@ -142,8 +137,8 @@
 	}else{
 		$american2f = $_POST['american2f'];
 	}
-	if (isset($_POST['american3'])) 
 	$american3 = Trim(stripslashes($_POST['american3']));
+
 	if(empty($_POST['ragamuffin1'])){
 		$ragamuffin1 = $blank;
 	}else{
@@ -179,7 +174,6 @@
 	}else{
 		$ragamuffin2f = $_POST['ragamuffin2f'];
 	}
-	if (isset($_POST['ragamuffin3'])) 
 	$ragamuffin3 = Trim(stripslashes($_POST['ragamuffin3']));
 	
 	if(empty($_POST['ragdoll1'])){
@@ -219,6 +213,7 @@
 	}
 	if (isset($_POST['ragdoll3'])) 
 	$ragdoll3 = Trim(stripslashes($_POST['ragdoll3']));
+
 	if(empty($_POST['bengal1'])){
 		$bengal1 = $blank;
 	}else{
@@ -254,38 +249,64 @@
 	}else{
 		$bengal2f = $_POST['bengal2f'];
 	}
-	if (isset($_POST['bengal3'])) 
 	$bengal3 = Trim(stripslashes($_POST['bengal3']));
 	
-	if (isset($_POST['fname'])) { 
-	$fname = mysqli_real_escape_string($connection, $fname);}
-	if (isset($_POST['lname'])) 
+	$fname = mysqli_real_escape_string($connection, $fname);
 	$lname = mysqli_real_escape_string($connection, $lname);
-	if (isset($_POST['email'])) 
 	$email = mysqli_real_escape_string($connection, $email);
-	if (isset($_POST['siamese1'])) 
+
 	$siamese1 = mysqli_real_escape_string($connection, $siamese1);
-	if (isset($_POST['maine1'])) 
-	$maine1 = mysqli_real_escape_string($connection, $maine1);
-	if (isset($_POST['american1'])) 
-	$american1 = mysqli_real_escape_string($connection, $american1);
-	if (isset($_POST['ragamuffin1'])) 
-	$ragamuffin1 = mysqli_real_escape_string($connection, $ragamuffin1);
-	if (isset($_POST['ragdoll1'])) 
-	$ragdoll1 = mysqli_real_escape_string($connection, $ragdoll1);
-	if (isset($_POST['bengal1'])) 
-	$bengal1 = mysqli_real_escape_string($connection, $bengal1);
-	if (isset($_POST['siamese3'])) 
+	$siamese2a = mysqli_real_escape_string($connection, $siamese2a);
+	$siamese2b = mysqli_real_escape_string($connection, $siamese2b);
+	$siamese2c = mysqli_real_escape_string($connection, $siamese2c);
+	$siamese2d = mysqli_real_escape_string($connection, $siamese2d);
+	$siamese2e = mysqli_real_escape_string($connection, $siamese2e);
+	$siamese2f = mysqli_real_escape_string($connection, $siamese2f);				
 	$siamese3 = mysqli_real_escape_string($connection, $siamese3);
-	if (isset($_POST['maine3'])) 
+
+	$maine1 = mysqli_real_escape_string($connection, $maine1);
+	$maine2a = mysqli_real_escape_string($connection, $maine2a);
+	$maine2b = mysqli_real_escape_string($connection, $maine2b);
+	$maine2c = mysqli_real_escape_string($connection, $maine2c);
+	$maine2d = mysqli_real_escape_string($connection, $maine2d);
+	$maine2e = mysqli_real_escape_string($connection, $maine2e);
+	$maine2f = mysqli_real_escape_string($connection, $maine2f);		
 	$maine3 = mysqli_real_escape_string($connection, $maine3);
-	if (isset($_POST['american3'])) 
+
+	$american1 = mysqli_real_escape_string($connection, $american1);
+	$american2a = mysqli_real_escape_string($connection, $american2a);
+	$american2b = mysqli_real_escape_string($connection, $american2b);	
+	$american2c = mysqli_real_escape_string($connection, $american2c);	
+	$american2d = mysqli_real_escape_string($connection, $american2d);	
+	$american2e = mysqli_real_escape_string($connection, $american2e);	
+	$american2f = mysqli_real_escape_string($connection, $american2f);		
 	$american3 = mysqli_real_escape_string($connection, $american3);
-	if (isset($_POST['ragamuffin3'])) 
-	$ragamuffin3 = mysqli_real_escape_string($connection, $ragamuffin3);
-	if (isset($_POST['ragdoll3'])) 
+	
+	$ragamuffin1 = mysqli_real_escape_string($connection, $ragamuffin1);
+	$ragamuffin2a = mysqli_real_escape_string($connection, $ragamuffin2a);
+	$ragamuffin2b = mysqli_real_escape_string($connection, $ragamuffin2b);	
+	$ragamuffin2c = mysqli_real_escape_string($connection, $ragamuffin2c);	
+	$ragamuffin2d = mysqli_real_escape_string($connection, $ragamuffin2d);	
+	$ragamuffin2e = mysqli_real_escape_string($connection, $ragamuffin2e);	
+	$ragamuffin2f = mysqli_real_escape_string($connection, $ragamuffin2f);	
+	$ragamuffin3 = mysqli_real_escape_string($connection, $ragamuffin3);	
+
+	$ragdoll1 = mysqli_real_escape_string($connection, $ragdoll1);
+	$ragdoll2a = mysqli_real_escape_string($connection, $ragdoll2a);	
+	$ragdoll2b = mysqli_real_escape_string($connection, $ragdoll2b);	
+	$ragdoll2c = mysqli_real_escape_string($connection, $ragdoll2c);	
+	$ragdoll2d = mysqli_real_escape_string($connection, $ragdoll2d);	
+	$ragdoll2e = mysqli_real_escape_string($connection, $ragdoll2e);	
+	$ragdoll2f = mysqli_real_escape_string($connection, $ragdoll2f);		
 	$ragdoll3 = mysqli_real_escape_string($connection, $ragdoll3);
-	if (isset($_POST['bengal3'])) 
+	
+	$bengal1 = mysqli_real_escape_string($connection, $bengal1);
+	$bengal2a = mysqli_real_escape_string($connection, $bengal2a);
+	$bengal2b = mysqli_real_escape_string($connection, $bengal2b);
+	$bengal2c = mysqli_real_escape_string($connection, $bengal2c);
+	$bengal2d = mysqli_real_escape_string($connection, $bengal2d);
+	$bengal2e = mysqli_real_escape_string($connection, $bengal2e);
+	$bengal2f = mysqli_real_escape_string($connection, $bengal2f);
 	$bengal3 = mysqli_real_escape_string($connection, $bengal3);
 	
 	// 2. Perform database query
@@ -319,7 +340,7 @@
 	$query .= "american2d = '{$american2d}', ";
 	$query .= "american2e = '{$american2e}', ";
 	$query .= "american2f = '{$american2f}', ";
-	$query .= "american3 = '{$american3}'";
+	$query .= "american3 = '{$american3}', ";
 
 	$query .= "ragamuffin1 = '{$ragamuffin1}', ";
 	$query .= "ragamuffin2a = '{$ragamuffin2a}', ";
@@ -346,7 +367,7 @@
 	$query .= "bengal2d = '{$bengal2d}', ";
 	$query .= "bengal2e = '{$bengal2e}', ";
 	$query .= "bengal2f = '{$bengal2f}', ";
-	$query .= "bengal3 = '{$bengal3}', ";
+	$query .= "bengal3 = '{$bengal3}' ";
 
 	$query .= "WHERE id = {$id}";
 
@@ -382,7 +403,7 @@
 			</div>
 
 			<?php
-				if (!$result) {
+				if ($result) {
 			?>
 				<div class="alert alert-success">
 				  <strong>Success!</strong> The update to account # <?php echo $id ?> has been completed. <a href="response-table.php" class="alert-link">Back to the Response Table</a>.
